@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversions decimal a binario, ...</title>
+
+</head>
+<body>
+    <script>
+
+        /* Demanar a l’usuari un número i mostrar el resultat de convertir-lo a binari, a octal i a hexadecimal. 
+        Cal que implementis el codi sencer utilitzant només bucles, condicionals, divisions i residus de divisió. */
+
+        function invCadena(cad) {
+            var cad_inv = "";
+
+            for (var i = 0; i < cad.length; i++) {
+                cad_inv += cad[cad.length - 1 - i];
+            }
+
+            return cad_inv;
+        }
+
+        function convHexa(val) {
+            switch (val) {
+                case 10:
+                    return "A";
+                    break;
+                case 11:
+                    return "B";
+                    break;
+                case 12:
+                    return "C";
+                    break;
+                case 13:
+                    return "D";
+                    break;
+                case 14:
+                    return "E";
+                    break;
+                case 15:
+                    return "F";
+                    break;
+                default:
+                    return val;
+            }
+        }
+
+        var num10 = parseInt(prompt("Escriu un numero", "120"));
+
+        var cad_2 = "";
+        var resto_2;
+        var coc_2 = num10;
+
+        while (coc_2 != 0) {
+            resto_2 = coc_2 % 2; // resto
+            coc_2 = parseInt(coc_2 / 2); // cociente
+            cad_2 += resto_2;
+        }
+
+        document.write("num2 = " + invCadena(cad_2));
+
+        var cad_8 = "";
+        var resto_8;
+        var coc_8 = num10;
+
+        while (coc_8 != 0) {
+            resto_8 = coc_8 % 8; // resto
+            coc_8 = parseInt(coc_8 / 8); // cociente
+            cad_8 += resto_8;
+        }
+
+        document.write("<br>num8 = " + invCadena(cad_8));
+
+        var cad_16 = "";
+        var resto_16;
+        var coc_16 = num10;
+
+        while (coc_16 != 0) {
+            resto_16 = coc_16 % 16; // resto
+            coc_16 = parseInt(coc_16 / 16); // cociente
+            cad_16 += convHexa(resto_16);
+        }
+        document.write("<br>num16 = " + invCadena(cad_16));
+
+
+    </script>
+</body>
+</html>

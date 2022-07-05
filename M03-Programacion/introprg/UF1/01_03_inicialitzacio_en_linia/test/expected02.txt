@@ -1,0 +1,6 @@
+El número pensat és 2
+Quan el multipliques per 3 obtens 6
+Quan li sumes 6 arriba a 12
+Un cop dividit per 3 queda 4
+Finalment, en restar-li el valor inicial, queda 2
+A que el resultat és 2?

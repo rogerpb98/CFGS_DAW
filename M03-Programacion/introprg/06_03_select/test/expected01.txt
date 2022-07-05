@@ -1,0 +1,20 @@
+Primer connectem amb la base de dades: connectat
+Creem la taula CATEGORIES
+
+Mostrem les categories disponibles inicialment
+Cap categoria
+
+Inserim les categories: 
+	Categoria(id:indefinit, ocell)
+	Categoria(id:indefinit, mamífer)
+
+Mostrem les categories disponibles ara
+Nombre de categories: 2
+	Categoria(id:2, mamífer)
+	Categoria(id:1, ocell)
+
+Consultem algunes categories
+En consultar per la categoria ocell obtenim Categoria(id:1, ocell)
+En consultar per la categoria mamífer obtenim Categoria(id:2, mamífer)
+En consultar per la categoria peix obtenim null
+Finalment tanquem la connexió amb la base de dades: desconnectat

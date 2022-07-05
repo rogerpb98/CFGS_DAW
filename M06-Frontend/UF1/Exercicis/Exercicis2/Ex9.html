@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		data=new Date();
+		var diesSetmana = new Array(7);
+        diesSetmana[0] = "Domingo";
+        diesSetmana[1] = "Lunes";
+        diesSetmana[2] = "Martes";
+        diesSetmana[3] = "Miercoles";
+        diesSetmana[4] = "Jueves";
+        diesSetmana[5] = "Viernes";
+        diesSetmana[6] = "Sabado";
+		var meses = new Array(12);
+        meses[0] = "Enero";
+        meses[1] = "Febrero";
+        meses[2] = "Marzo";
+        meses[3] = "Abril";
+        meses[4] = "Mayo";
+        meses[5] = "Junio";
+        meses[6] = "Julio";
+		meses[7] = "Agosto";
+        meses[8]= "Septiembre";
+        meses[9] = "Octubre";
+        meses[10] = "Noviembre";
+        meses[11] = "Diciembre";
+		console.log("Hoy es "+diesSetmana[data.getDay()]+" "+data.getDate()+" de "+meses[data.getMonth()]+" de "+data.getFullYear());
+	</script>
+</body>
+</html>

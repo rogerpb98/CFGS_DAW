@@ -1,0 +1,4 @@
+Vides inicials: 7
+Posició inicial: estirat
+Introdueix nova posició:
+Posició final: estirat

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <id>001</id>
+        <full_name>Antonio Recio</full_name>
+        <email>elmaralmejorprecio@lqsa.com</email>
+        <gender>Hombre</gender>
+        <date_of_birth>07/05/1966</date_of_birth>
+        <country_code>35461</country_code>
+        <created_at>01/02/2012</created_at>
+    </user>
+    <user>
+        <id>002</id>
+        <full_name>Antonia</full_name>
+        <email>tumohhrenicahh23@hotmail.com</email>
+        <gender>Mujer</gender>
+        <date_of_birth>15/08/1997</date_of_birth>
+        <country_code>94768</country_code>
+        <created_at>03/05/1998</created_at>
+    </user>
+    <user>
+        <id>003</id>
+        <full_name>Juana Pez</full_name>
+        <email>whydowelivejusttosuffer@gmail.com</email>
+        <gender>Helicoptero de combate Apache</gender>
+        <date_of_birth>01/01/2000</date_of_birth>
+        <country_code>16485</country_code>
+        <created_at>19/10/2005</created_at>
+    </user>
+</users>

@@ -1,0 +1,31 @@
+Primer connectem amb la base de dades: connectat
+
+Creem les taules
+Taules resultants: ANIMALS, CATEGORIES
+
+Introduïm categories amb una de repetida
+Nombre de categories: 3
+	Categoria(id:1, ocell)
+	Categoria(id:3, ocell)
+	Categoria(id:2, peix)
+
+Afegim guppy amb Categoria(id:2, peix)
+Nombre de categories: 3
+	Categoria(id:1, ocell)
+	Categoria(id:3, ocell)
+	Categoria(id:2, peix)
+
+Afegim guppy dins d'una categoria coneguda
+Nombre de categories: 3
+	Categoria(id:1, ocell)
+	Categoria(id:3, ocell)
+	Categoria(id:2, peix)
+
+Afegim un animal d'una nova categoria
+Nombre de categories: 4
+	Categoria(id:4, mamífer)
+	Categoria(id:1, ocell)
+	Categoria(id:3, ocell)
+	Categoria(id:2, peix)
+
+Finalment tanquem la connexió amb la base de dades: desconnectat

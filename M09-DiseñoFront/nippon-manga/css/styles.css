@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nm-header {
+  display: flex;
+  align-items: center;
+  height: 12vh;
+}
+.nm-header__logo {
+  width: 70%;
+  margin-left: 20%;
+}
+.nm-header__link {
+  text-decoration: none;
+}
+
+.nm-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+.nm-nav__links {
+  display: inline-flex;
+}
+.nm-nav__link {
+  margin: 5px;
+  flex-direction: row;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.nm-main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto 10px auto;
+  border-radius: 5px;
+}
+.nm-main__container {
+  width: 90%;
+  margin: 10px auto 10px auto;
+}
+.nm-main__container .fin-compra-title {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.nm-main__container .text-main-fin-compra {
+  height: 220px;
+}
+.nm-main__container .fin-compra-text {
+  text-align: center;
+  font-size: 20px;
+}
+.nm-main__container .thanks-icon {
+  margin-left: 60%;
+}
+.nm-main__container #compra #cesta {
+  display: flex;
+  width: 100%;
+}
+.nm-main__container #compra #cesta #carrito {
+  width: 30%;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+.nm-main__container #compra #cesta #carrito .liniaHorizontal {
+  width: 200px;
+  margin: 20px 0px 20px 0px;
+}
+.nm-main__container #compra #cesta #carrito .precio_final {
+  margin-top: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #EB5E28;
+  padding: 10px;
+  width: 135px;
+}
+.nm-main__container #compra #cesta #carrito .img_style {
+  width: 120px;
+}
+.nm-main__container #compra #cesta #envio {
+  width: 70%;
+}
+.nm-main__container #compra #cesta #liniaVertical_carrito {
+  margin-right: 80px;
+}
+.nm-main__container #mangas {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.nm-main__container #mangas article {
+  width: calc((100% - 170px) / 4);
+  margin: 10px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.nm-main__container #mangas article div h3 {
+  overflow-wrap: break-word;
+}
+.nm-main__container #mangas article div img {
+  width: 100%;
+}
+.nm-main__container #mangas article button {
+  border-radius: 5px;
+  width: fit-content;
+  margin: auto;
+  padding: 2px;
+}
+.nm-main__container #categorias {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+.nm-main__container #categorias #categoria {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nm-main__container #categorias #categoria img {
+  width: 40vh;
+}
+.nm-main__container .formulario {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 213px;
+}
+.nm-main__container .formulario .input_form {
+  margin: 5px;
+}
+
+.nm-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+}
+.nm-footer__copyright {
+  padding-left: 20px;
+  font-size: small;
+}
+.nm-footer__socials {
+  padding-right: 20px;
+}
+.nm-footer__logo {
+  width: 50px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.enviar {
+  border-radius: 5px;
+  width: fit-content;
+  margin: auto;
+  padding: 2px;
+}
+
+.data {
+  width: calc(96%/2);
+}
+
+.mail {
+  width: 100%;
+}
+
+.comentario {
+  width: 100%;
+  height: 50px;
+}
+
+.nm-nav__carrito{
+  position:absolute;
+  right:26px;
+  top:104px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JAuth</string>
+    <string name="welcomeToJAuth">Bienvenido a JAuth, ¿Ya has llegado? Bueno, autentíquese y ¡Manos a la obra!</string>
+    <string name="signIn">Iniciar Sesión</string>
+    <string name="signUp">Registrarse</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="methodEmail">Continuar con email</string>
+    <string name="detail">Detalles</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="mail">Correo</string>
+    <string name="user_password">Contraseña</string>
+    <string name="txtRememberPassword">¿Ha olvidado su contraseña?</string>
+    <string name="txtRegister">¿Aún no estás registrado?</string>
+    <string name="txtRegister2">Registrarse</string>
+    <string name="or">o</string>
+    <string name="loginGoogle">Continuar con Google</string>
+    <string name="loginFacebook">Continuar con Facebook</string>
+    <string name="authFail">Autentificación fallida</string>
+    <string name="authSuccess">Se inició sesión correctamente</string>
+    <string name="orders">Pedidos</string>
+    <string name="cart_empty">Tu carrito esta vació</string>
+    <string name="addtocart">AÑADIR AL PEDIDO</string>
+    <string name="quantity">Cantidad:</string>
+    <string name="categoriesTitle">Categorías</string>
+    <string name="selectAll">Seleccionar todo</string>
+    <string name="buyNowCart">Comprar ahora</string>
+    <string name="totalPrice">Total</string>
+    <string name="addedItemInCart">Has añadido el producto en el carrito</string>
+    <string name="cartDeleteEmptyToast">"El carrito está vacío"</string>
+    <string name="cartDeleteListToast">"El carrito ha sido vaciado"</string>
+    <string name="cartDeleteItemToast">"El plato ha sido eliminado del carrito"</string>
+    <string name="searchbar">Buscar</string>
+    <string name="locationbar">Ubicación</string>
+    <string name="titleforrepeat">Para repetir!</string>
+    <string name="titlesales">Top ventas</string>
+    <string name="coin">€</string>
+
+    <string name="menu_auth">Autenticar</string>
+    <string name="menu_schedule">Horario</string>
+    <string name="menu_assists">Asistencias</string>
+
+</resources>

@@ -1,0 +1,54 @@
+#titol {
+    color: darkturquoise;
+}
+p > strong {
+    color: red;
+}
+.destacat {
+    color: rgb(255, 204, 0);
+}
+#subtitol{
+    color: blue;
+}
+a {
+    color: red;
+}
+a > em {
+    color: blue;
+    font-style: cursive;
+}
+.especial {
+    color: purple;
+}
+caption {
+    color: blue;
+}
+tr > th {
+    color: red;
+}
+tr > td {
+    color: green;
+}
+td > strong {
+    color: rgb(255, 204, 0);
+}
+td > em {
+    font-style: cursive;
+}
+tr > .especial {
+    color: rgb(255, 204, 0);
+}
+table, th, td {
+    border-collapse:collapse;
+    padding: 5px;
+    border:1px solid black;
+}
+#adicional {
+    color: #86895D;
+}
+#especial {
+    color: #c237db;
+}
+#adicional > p > a {
+    color: darkgreen;
+}

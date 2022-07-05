@@ -1,0 +1,48 @@
+Comprovem els mètodes de ensinistrable
+======================================
+m'aixeco
+true
+m'assec
+true
+m'estiro
+true
+Comprovem els mètodes d'AnimalDeCompanyia
+=========================================
+em deixo estimar
+em deixo estimar una mica
+Comprovem els mètodes d'Esser viu
+=================================
+true
+adéu món cruel
+encara visc
+true
+adéu món cruel
+encara visc
+true
+adéu món cruel
+encara visc
+true
+adéu món cruel
+encara visc
+Comprovem els mètodes de Gat
+============================
+Renat
+adéu món cruel
+false
+guai!
+1
+Garfield
+adéu món cruel
+false
+guai!
+1
+Gat Salvatge
+adéu món cruel
+false
+guai!
+1
+Gargamel
+adéu món cruel
+false
+guai!
+1

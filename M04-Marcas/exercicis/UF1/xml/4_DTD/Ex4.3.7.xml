@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lleis [
+<!ELEMENT lleis (titol, murphy, ginsberg, confuci, altres)>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT murphy (tipus, llei1, llei2, llei3)>
+<!ELEMENT ginsberg (tipus, llei4, llei5, llei6)>
+<!ELEMENT confuci (tipus, llei7, llei8, llei9)>
+<!ELEMENT altres (tipus, llei10, llei11, llei12, llei13)>
+
+<!ELEMENT tipus (#PCDATA)>
+<!ELEMENT llei1 (#PCDATA)>
+<!ELEMENT llei2 (#PCDATA)>
+<!ELEMENT llei3 (#PCDATA)>
+<!ELEMENT llei4 (#PCDATA)>
+<!ELEMENT llei5 (#PCDATA)>
+<!ELEMENT llei6 (#PCDATA)>
+<!ELEMENT llei7 (#PCDATA)>
+<!ELEMENT llei8 (#PCDATA)>
+<!ELEMENT llei9 (#PCDATA)>
+<!ELEMENT llei10 (#PCDATA)>
+<!ELEMENT llei11 (#PCDATA)>
+<!ELEMENT llei12 (#PCDATA)>
+<!ELEMENT llei13 (#PCDATA)>
+
+<!ATTLIST murphy id CDATA #REQUIRED>
+<!ATTLIST ginsberg id CDATA #REQUIRED>
+<!ATTLIST confuci id CDATA #REQUIRED>
+<!ATTLIST altres id CDATA #REQUIRED>
+<!ATTLIST llei1 id CDATA #REQUIRED>
+<!ATTLIST llei2 id CDATA #REQUIRED>
+<!ATTLIST llei3 id CDATA #REQUIRED>
+<!ATTLIST llei4 id CDATA #REQUIRED>
+<!ATTLIST llei5 id CDATA #REQUIRED>
+<!ATTLIST llei6 id CDATA #REQUIRED>
+<!ATTLIST llei7 id CDATA #REQUIRED>
+<!ATTLIST llei8 id CDATA #REQUIRED>
+<!ATTLIST llei9 id CDATA #REQUIRED>
+<!ATTLIST llei10 id CDATA #REQUIRED>
+<!ATTLIST llei11 id CDATA #REQUIRED>
+<!ATTLIST llei12 id CDATA #REQUIRED>
+<!ATTLIST llei13 id CDATA #REQUIRED>]>
+
+<lleis>
+    <titol> Humor </titol>
+    <murphy id="1">
+        <tipus> Lleis de Murphy </tipus>
+        <llei1 id="1.1"> Si alguna cosa pot fallar, fallarà.</llei1>
+        <llei2 id="1.2"> Si alguna cosa no pot fallar, ho farà malgrat tot.</llei2>
+        <llei3 id="1.3"> Si alguna cosa sembla que va bé, és obvi que s'ha passat alguna cosa
+        per alt.</llei3>
+    </murphy>
+    <ginsgberg id="2">
+        <tipus> Teoremes de Ginsgberg </tipus>
+        <llei4 id="2.1"> No pots guanyar.</llei4>
+        <llei5 id="2.2"> No pots desempatar.</llei5>
+        <llei6 id="2.3"> I tampoc pots abandonar el joc.</llei6>
+    </ginsgberg>
+    <confuci id="3">
+        <tipus> Frases de Confuci </tipus>
+        <llei7 id="3.1"> Escolte i oblide. Veig i recorde. Faig i aprenc.</llei7>
+        <llei8 id="3.2"> Fes tot amb moderació, fins i tot moderar-te.</llei8>
+        <llei9 id="3.3"> Siguen el canvi que vols veure al món.</llei9>
+    </confuci>
+    <altres id="4">
+        <tipus> Altres</tipus>
+        <llei10 id="4.1"> És igual per on obris la caixa d'un medicament. Sempre et molestarà
+        el prospecte.</llei10>
+        <llei11 id="4.2"> Arribaràs al telèfon just a temps per sentir com pengen.</llei11>
+        <llei12 id="4.3"> Mai et caldrà res a guardis per si ho necessites.</llei12>
+        <llei13 id="4.4"> Els problemes neixen, creixen, es multipliquen i romanen.</llei13>
+    </altres>
+</lleis>

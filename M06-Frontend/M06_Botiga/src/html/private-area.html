@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9/crypto-js.min.js" integrity="sha512-Zl1k/bs5R0zzwAw+kxzMh4HjpC2Y2fy8Qu8xoUUA4mXTYtgq6oWtLUUMSRiaJZ/hH0hwE7locgWLozvskZrnvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<link rel="stylesheet" href="css/style.css">
+		<script type="module" src="js/private-area.js"></script>
+
+	</head>
+
+	<body>
+		<nav class="c-header">
+			<a class="c-header__brand" href="#">UALA</a>
+
+			<div class="c-header__stuff" id="navbarSupportedContent">
+				<ul class="c-header__list">
+				</ul>
+			</div>
+			<!-- Button trigger modal -->
+			<!-- Button trigger modal -->
+			<button class="c-header__add" type="button" data-toggle="modal" data-target="#addProductModal">
+				Add Product
+			</button>
+			<button class="c-header__logout" type="button" id="logout">
+				Logout
+			</button>
+
+		</nav>
+
+		<main class="c-main">
+			<table id="c-main__table" class="table">
+			</table>
+		</main>
+		<!-- Modal login -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginCenterTitle"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Login</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div id="login_body" class="modal-body">
+						<form>
+							<div id="login_alert"></div>
+							<div class="form-group">
+								<label for="inputUser">Email</label>
+								<input type="email" class="form-control" id="inputUser" aria-describedby="emailHelp"
+									placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="inputPass">Contrasenya</label>
+								<input type="password" class="form-control" id="inputPass" placeholder="Password">
+							</div>
+							<button id="submitloginUser" type="button" class="btn btn-primary">Accedir</button>
+							<button id="register" type="button" class="btn btn-primary">Registrar</button>
+							<!-- <a href="/" type="button">Tornar enrere</button> -->
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal register -->
+		<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="loginCenterTitle"
+		aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Register</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div id="register_body" class="modal-body">
+						<form>
+							<div id="register_alert"></div>
+							<div class="form-group">
+								<label for="inputEmail">Email</label>
+								<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+									placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="inputPass">Contrasenya</label>
+								<input type="password" class="form-control" id="inputPass" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="inputName">Nombre</label>
+								<input type="text" class="form-control" id="inputName" placeholder="Nombre">
+							</div>
+							<div class="form-group">
+								<label for="inputLname">Apellido</label>
+								<input type="text" class="form-control" id="inputLname" placeholder="Apellido">
+							</div>
+							<div class="form-group">
+								<label for="inputAdress">Direcció</label>
+								<input type="text" class="form-control" id="inputAdress" placeholder="Dirección">
+							</div>
+							<button id="submitRegisterUser" type="button" class="btn btn-primary">Accedir</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+						<label for="inputName">Name</label>
+						<input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+						<div class="invalid-feedback"></div>
+						</div>
+						<div class="form-group">
+							<label for="inputDescription">Description</label>
+							<input type="text" class="form-control" id="inputDescription" aria-describedby="emailHelp">
+							<div class="invalid-feedback"></div>
+						</div>
+						<div class="form-group">
+							<label for="inputPrice">Price</label>
+							<input type="text" class="form-control" id="inputPrice" aria-describedby="emailHelp">
+							<div class="invalid-feedback"></div>
+						</div>
+						<div class="form-group">
+							<label for="inputImage">Product image</label>
+							<input type="file" class="form-control-file" id="inputImage">
+						</div>
+						<div class="form-group">
+							<label for="categories">Choose a category:</label>
+							<select name="categories" id="categories">
+								<option value="Motos">Motos</option>
+								<option value="Electrodomesticos">Electrodomesticos</option>
+								<option value="Videojuegos">Videojuegos</option>
+								<option value="Plantas">Plantas</option>
+								<option value="Bebidas">Bebidas</option>
+							</select>
+						</div>
+							<button type="submit" id="addProductSubmit" class="btn btn-primary">Submit</button>
+					</form>
+					</div>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

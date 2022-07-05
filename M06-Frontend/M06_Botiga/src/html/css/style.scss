@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    pad: 0;
+}
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    border-bottom: 1px solid black;
+    padding: 5px;
+
+    &__brand {
+
+    }
+    &__stuff {
+        width: 50%;
+    }
+    &__list {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        justify-content: space-around;
+    }
+    &__item {
+
+    }
+    &__link {
+
+    }
+    &__login {
+
+    }
+}
+
+.c-main {
+    width: 80%;
+    margin: auto;
+    background-color: lightgray;
+
+    &__table {
+        width: 100%;
+    }
+    &__row {
+        * {
+            text-align: center;
+        }
+    }
+}
+
+.modal-body img {
+    max-width: 100%;
+}

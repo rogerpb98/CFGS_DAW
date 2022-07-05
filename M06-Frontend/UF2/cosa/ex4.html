@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let clasificaciones = [
+            "Ana",
+            "Oswaldo",
+            "Raúl",
+            "Celia",
+            "María",
+            "Antonio"
+        ];
+        document.write("<h3>Clasificación: </h3>")
+        document.write("<ol>");
+        clasificaciones.forEach(elemento => {
+            document.write("<li>"+elemento+"</li>")
+        });
+        document.write("</ol>");
+        //Cambiar a celia for Raúl
+        let cambio1 = clasificaciones.indexOf("Celia");
+        let cambio2 = clasificaciones.indexOf("Raúl");
+        let swap=clasificaciones[cambio1];
+        clasificaciones[cambio1]=clasificaciones[cambio2];
+        clasificaciones[cambio2]=swap;
+        //Eliminar a Antonio
+        clasificaciones.pop();
+        //Añadir dos nuevos concursantes entre Ana y Oswaldo
+        clasificaciones.splice(clasificaciones.indexOf("Ana")+1, 0, "Roberto");
+        clasificaciones.splice(clasificaciones.indexOf("Roberto")+1, 0, "Amaya");
+        //Añadir a Marta al primer puesto
+        clasificaciones.unshift("Marta");
+        //Mostrar clasificacion final
+        document.write("<h3>Clasificación despues de los cambios: </h3>")
+        document.write("<ol>");
+        clasificaciones.forEach(elemento => {
+            document.write("<li>"+elemento+"</li>")
+        });
+        document.write("</ol>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		var tipusConversio=prompt("Introdueix el tipus de dades a introduir [C] [F]:");
+		var graus=parseInt(prompt("Introdueix els graus:"));
+		var resultat=0;
+		if (tipusConversio=="C") {
+			resultat=(9/5)*graus+32;
+			document.write("<p>"+resultat+"</p>");
+		} else {
+			resultat=(graus-32)*5/9;
+			document.write("<p>"+resultat+"</p>");
+		}
+	</script>
+</body>
+</html>

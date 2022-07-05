@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		var temps=prompt("Introdueix un temps (HHMMSS): ");
+		var hores=parseInt(temps.substring(0,2));
+		alert(hores);
+		var minuts=parseInt(temps.substring(2,4));
+		alert(minuts);
+		var segons=parseInt(temps.substring(4,6));
+		alert(segons);
+		minuts=minuts+hores*60+minuts/60;
+		alert("minuts"+minuts);
+		var preu=(10+minuts*5)/100;
+		var preuFormatat=preu.toFixed(2);
+		alert(preuFormatat+" euros");
+		
+	</script>
+</body>
+</html>

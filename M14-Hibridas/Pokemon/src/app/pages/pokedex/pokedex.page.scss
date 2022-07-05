@@ -1,0 +1,39 @@
+
+$color-yellow: rgb(255, 203, 5);
+$color-light-blue: rgb(57, 95, 170);
+$color-dark-blue: rgb(29, 44, 94);
+$color-ochre: rgb(199, 160, 8);
+#cards {
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    ion-card {
+        width: fit-content;
+        min-width: 250px;
+
+        box-shadow: $color-yellow 0px 0px 5px 5px;
+        ion-card-header {
+            .delete {
+                border-radius: 5px;
+                background-color: $color-yellow;
+            }
+            //display: flex;
+            //justify-content: space-between;
+        }
+        ion-card-content {
+            background-color: $color-light-blue;
+            ion-list {
+                border-radius: 5px;
+                .listAtributeTitle {
+                    font-weight: bold;
+                }
+            }
+        }
+        ion-card-content * {
+            background-color: $color-dark-blue
+        }
+    }    
+}

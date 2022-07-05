@@ -1,0 +1,10 @@
+Inicialment renat.estaViu(): true
+Inicialment renat.estaDret(): false
+Inicialment renat.estaAssegut(): false
+Inicialment renat.estaEstirat(): true
+Introdueix quantes vides:
+Introdueix nova posició:
+Finalment renat.estaViu(): false
+Finalment renat.estaDret(): false
+Finalment renat.estaAssegut(): false
+Finalment renat.estaEstirat(): true

@@ -1,0 +1,83 @@
+1 - The root element
+/collection
+
+2 - All the songs
+//song
+
+3 - First song
+//song[1]
+
+4 - Second song
+//song[2]
+
+5 - Last song
+//song[last()]
+
+6 - Penultimate (next to last) song
+//song[last()-1]
+
+7 - The first five songs
+//song[position() < 6]
+
+8 - How many songs
+count(//song)
+
+9 - Single songs
+//song[@single="yes"]
+
+10 - Songs for all audiences
+//song[@tp="yes"]
+
+11 - Single songs and for all audiences
+//song[@tp="yes" and @single="yes"]
+
+12 - Non-single songs
+//song[@single="no"]
+
+13 - Songs neither single nor for all audiences (both conditions)
+//song [not (@single)] [@tp = "no"]
+
+14 - Non-single songs or not for all audiences
+//song[@tp="no" or @single="no"]
+
+15 - Attributes of the first song
+//song[1]/@*
+
+16 - Year of the first song
+//song[1]/date/year/text()
+
+17 - Title (text) of the first song
+//song[1]/title/text()
+
+18 - Title and artist of the first song
+concat(//song[1] /title /text(), '(',//song[1] /artist /text(),')')
+
+19 - Songs released on the 20th (day)
+count(//day[contains(text(),'20')])
+
+20 - Songs by the group Metallica
+//song[./artist[contains(text(),'Metallica')]]
+
+21 - Dates of the songs of the group Metallica
+//date/*/text()[../../../artist[contains(text(),'Metallica')]]
+
+22 - Songs whose year corresponds to the year of publication
+//song[./@year=./date/year/text()]
+
+23 - Title of the songs with *Harmonies” of extra
+//song/title/text()[../../extres="Harmonies"]
+
+24 - Songs with little stock
+//song[./stock<10]
+
+25 - Title of songs that have run out of stock
+//song[./stock=0]
+
+26 - Units in stock of "The Cars"
+sum(//stock/text()[../../artist/text()="The Cars"])
+
+27 - Units in stock except for one song
+//song[./stock>1]
+
+28 - A very specific song ############################################# WIP
+//title/text()[../../@single="yes" and ../../@tp="yes" and ../../genre/contains(text(),"Rock") and ]

@@ -1,0 +1,49 @@
+1.- Select ALL the news that appears on the main page.
+Hint: on 15/03/20 there are 11 different news.
+//article
+
+2.- Find an xPath to select every day in the calendar for the current month.
+//tbody/tr/td[not(contains(@class,'simcal-day-void'))]
+
+3.- Find an XPath that selects the current calendar day on the right.
+Hint: The current day differs from the rest because it is circled. contains(@class,"simcal-present")
+//tbody/tr/td[contains(@class,'simcal-present')]
+
+4.- Select all the icons in the "Educational Links" section.
+//div[@class="grid-icon"]/a/img
+
+5.- Select all items in the ''Labels'' section. 
+Hint: there are 45.
+//div[@class="tagcloud"]/a
+
+6.- Select the items that contain the current month and year from the calendar on the right.
+//h3/span
+
+7.- Select the two items at the bottom of the page to keep up to date with the web.
+//div[@id="socialmedia_widget-2"]/a
+
+8.- Select only the 6 links that appear in the web header.
+Hint: There are 3 more hidden links that should not be selected, these are differentiated by the text "show-for-small", which is in a specific attribute.
+//div/div[not(contains(@class,'show-for-small'))]/button/span
+
+1.- At the bottom of the web are all the languages ​​in which this can be viewed. Find an XPath that selects items from ALL languages.
+Hint: you may use contains().
+//div[contains(@class,'lang-icons')]/ul/li
+
+2.- Find an xPath that tells us how many ‘moodle courses’ are open for ESO level studies.
+Hint: there are a total of 4.
+//a[text()='ESO']/../../../div[@class="content"]/div/div
+
+3.- Find an xPath that selects the header elements of the "Main Menu" and "Calendar" boxes.
+//h5[@id="instance-3-header"]
+
+4.- Find an xPath that selects the "Sign in" link element of the webpage header.
+//span[@class="login"]/a
+
+5.- Find an xPath that selects from the calendar in the left bar (aside) every day that is on a weekend.
+Hint: @class,"weekend"
+//td[contains(@class,'weekend')]
+
+6.- Find an xPath that selects the item from the world's best subject ever (inside the “Comuns” section now.
+Hint: Llenguatges de marques i sistemes de gestió d'informació
+//div[@data-courseid="1802"]/div/h3/a

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Metodes de l'objecte finestra</title>
+</head>
+<body>
+    <button onclick="openW()">abrir</button>
+    <button onclick="closeW()">cerrar</button>
+    <button onclick="resizW()">redimensionar</button>
+    <button onclick="moveW()">mover</button>
+    <button onclick="focusW()">focus</button>
+    <button onclick="printW()">print</button>
+	<script>
+        //obre finestra 300x500 titol finesta nova
+        function openW() {
+            myWindow = window.open(name="finestra nova", width='300', height='500');
+            myWindow.document.write("finestra nova");
+        }
+        //tanca finestra
+        function closeW() {
+            myWindow.close();
+        }
+        //redimensiona +20x+30
+        function resizW() {
+            myWindow.resizeBy(20,30);
+        }
+        //mou finestra 15->20v
+        function moveW() {
+            myWindow.moveBy(15,20);
+        }
+        //enfoca finestra
+        function focusW() {
+            myWindow.focus();
+        }
+        //imprimeix finestra
+        function printW() {
+            myWindow.print();
+        }
+	</script>
+</body>
+</html>

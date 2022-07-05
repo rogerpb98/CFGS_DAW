@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess number</title>
+
+</head>
+<body>
+
+    <script>
+        var rnd = Math.floor(Math.random() * 100) + 1;
+        console.log("rnd = " + rnd);
+
+        var found = false;
+        var intents = 0;
+        while (!found) {
+
+            num = parseInt(prompt("Endevina el numero de 1 a 100 que he pensat: "));
+            console.log("num = " + num);
+
+            if (!isNaN(num) && num >= 0 && num <= 100) {
+
+                if (num == 0) {
+                    break;
+                }
+
+                if (num > rnd) {
+                    console.log("Mes petit")
+                    alert("No, es mes petit que " + num);
+                } else if (num < rnd) {
+                    console.log("Mes gran")
+                    alert("No, es mes gran que " + num);
+                } else { // num == rnd
+                    found = true;
+                }
+            }
+
+            intents++;
+        }
+
+        if (found) {
+            alert("Exacte, ho has encertat en " + intents + " intents, era el numero " + rnd);
+        } else {
+            alert("GAME IS OVER");
+        }
+
+    </script>
+
+</body>
+</html>

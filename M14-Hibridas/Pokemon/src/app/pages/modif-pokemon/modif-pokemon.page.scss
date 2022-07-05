@@ -1,0 +1,24 @@
+$color-yellow: rgb(255, 203, 5);
+$color-light-blue: rgb(57, 95, 170);
+$color-dark-blue: rgb(29, 44, 94);
+$color-ochre: rgb(199, 160, 8);
+form {
+    padding: 1px;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid $color-ochre;
+    border-radius: 5px;
+
+    background-color: $color-light-blue;
+    ion-button {
+        width:fit-content;
+        margin: auto;
+    }
+    .item-highlight {
+        background-color: $color-ochre;
+    }
+}
+#popUp {
+    text-align: center;
+    display: none;
+}

@@ -1,0 +1,9 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+botiga> Comandes disponibles:
+ajuda
+cerca
+afegeix
+modifica
+elimina
+surt
+botiga> adéu

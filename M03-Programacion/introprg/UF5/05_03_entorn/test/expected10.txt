@@ -1,0 +1,3 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+botiga> nom (enter cancel·la)> No trobat
+botiga> adéu

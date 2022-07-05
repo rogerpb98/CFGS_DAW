@@ -1,0 +1,22 @@
+cataleg{
+    background-color:rgb(220, 230, 220);
+    display:block; }
+llibre{
+    display:block;
+    width:100%;
+    margin-bottom:40px;
+    clear:both; }
+title{
+    float:left;
+    width:45%;
+    border:solid black 1px;
+    padding:5px;
+    text-align:center;
+    background-color:rgb(180,180,240); }
+autor{
+    float:left;
+    text-align:center;
+    width:45%;
+    border:solid black 1px;
+    padding:5px;
+    background-color:rgb(340,180,240); }

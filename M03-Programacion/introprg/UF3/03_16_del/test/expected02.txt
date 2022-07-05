@@ -1,0 +1,3 @@
+Gestor de puzles d'escacs. Escriviu help per ajuda.
+puzle> ERROR: del «nom» «fila» «columna»
+puzle> adèu

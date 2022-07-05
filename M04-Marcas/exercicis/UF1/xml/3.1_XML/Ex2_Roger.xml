@@ -1,0 +1,42 @@
+<DevAppMobile>
+    <Front_end id="Dev1">
+        <Mobile id="fe1">
+            <Persona id="per1" />
+        </Mobile>
+        <Web id="fe2">
+            <Persona id="per2" />
+        </Web>
+    </Front_end>
+    <Back_end id="Dev2">
+        <Java id="be1">
+            <Persona id="per3" />
+        </Java>
+    </Back_end>
+    <Data_base id="DB1">
+        <Oracle id="db1">
+            <Persona id="per4" />
+        </Oracle>
+        <FireBase id="db2">
+            <Persona id="per5" />
+        </FireBase>
+    </Data_base>
+    <Maintenance id="Adm1">
+        <PC_team id="m1">
+            <IA id="per5" />
+            <Persona id="per6" lang="en" />
+        </PC_team>
+    </Maintenance>
+    <Administration id="Office1">
+        <Legal_team id="a1">
+            <Persona id="per7" />
+        </Legal_team>
+    </Administration>
+    <Comerce id="Office2">
+        <Internal id="c1">
+            <Persona id="per8" lang="en" />
+        </Internal>
+        <Internal id="c2">
+            <Persona id="per9" />
+        </Internal>
+    </Comerce>
+</DevAppMobile>

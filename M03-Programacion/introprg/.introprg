@@ -1,0 +1,57 @@
+# Aquest és el fitxer de configuració per realitzar el curs d'introducció
+# a la programació
+#
+# IMPORTANT: 
+#
+#  * El contingut d'aquest fitxer podrà ser canviat pel docent
+#    durant el desenvolupament del curs, de manera automàtica.
+#
+#  * Aquest fitxer ha de ser col·locat a l'arrel del repositori del curs
+#    (probablement ~/introprg)
+#
+#  * En cas que algun dels valors no s'adequi als teus interessos, et
+#    recomano que els redefineixis com et convingui directament a ~/.bashrc
+#    tot just després de la línia en que incorpora aquest.
+#    Probablement:
+#      source $HOME/introprg/.introprg
+
+# directori on es troba el teu repositori del curs
+export INTROPRGDIR="$(cd $(dirname $BASH_SOURCE); pwd)"
+
+# paths per utilitats
+PATH=$PATH:$INTROPRGDIR/lib
+
+# altres variables
+export INTROPRG_SQLITEURL=https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.34.0/sqlite-jdbc-3.34.0.jar
+DRIVERJAR=$(echo $INTROPRG_SQLITEURL | cut -d \/ -f 9)
+
+# paths per Java
+export CLASSPATH=${CLASSPATH:-.}
+CLASSPATH=$CLASSPATH:$INTROPRGDIR/lib
+CLASSPATH=$CLASSPATH:$INTROPRGDIR/lib/junit-platform-console-standalone.jar
+CLASSPATH=$CLASSPATH:$INTROPRGDIR/lib/$DRIVERJAR
+
+# opcions de comparació pels tests d'E/S per defecte
+INTROPRG_DIFFOPTIONS="-EZbB"
+
+# detecció del tipus de màquina
+# Necessari per oferir comportaments diferents segons plataforma
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)
+        INTROPRG_MACHINE=Linux
+        ;;
+    Darwin*)
+        INTROPRG_MACHINE=Mac
+        # Mac machines seem to have outdated difftools that do not include
+        # -Z option
+        INTROPRG_DIFFOPTIONS="-EbB"
+        ;;
+    CYGWIN*)
+        INTROPRG_MACHINE=Cygwin
+        # Default options for Cygwin machines until problem detection
+        ;;
+    *)
+        INTROPRG_MACHINE="UNKNOWN:${unameOut}"
+        # Default options for unknown machines until problem detection
+esac

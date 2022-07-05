@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background: rgb(22,38,61);
+    background: linear-gradient(0deg, rgba(22,38,61,1) 0%, rgba(121,175,208,1) 35%, rgba(154,219,246,1) 100%);
+    
+}
+nav {
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: rgba(44, 72, 164, 0.50);
+}
+main {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main button {
+    width: 500px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.514);
+    color: white;
+}

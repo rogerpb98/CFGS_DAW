@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.JAuth" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/babyBlue</item>
+        <item name="colorPrimaryVariant">@color/oxfordBlue</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/darkCornflowerBlue</item>
+        <item name="colorSecondaryVariant">@color/steelBlue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Nav Bar color. -->
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">?attr/colorPrimary</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.JAuth">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="Theme.JAuth.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.JAuth.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.JAuth.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

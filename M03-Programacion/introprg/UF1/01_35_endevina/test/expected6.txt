@@ -1,0 +1,10 @@
+Nombre?
+Massa petit
+Nombre?
+Massa gran
+Nombre?
+Fora de rang
+Nombre?
+Fora de rang
+Nombre?
+Encertat!

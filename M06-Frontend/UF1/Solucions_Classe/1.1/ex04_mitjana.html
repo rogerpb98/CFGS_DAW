@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        /* Fes un programa que demani tres números a l’usuari i mostri la mitjana, el major i el menor.*/
+
+        n1 = parseInt(prompt("Primer numero: "));
+        n2 = parseInt(prompt("Segundo numero: "));
+        n3 = parseInt(prompt("Tercer numero: "));
+        console.log(n1+","+n2+","+n3);
+
+        media = (n1 + n2 + n3) / 3;
+
+        mayor = n1;
+        if (n2 > mayor) mayor = n2;
+        if (n3 > mayor) mayor = n3;
+
+        menor = n1;
+        if (n2 < menor) menor = n2;
+        if (n3 < menor) menor = n3;
+
+        document.write("media = "+media);
+        document.write("<br>mayor = "+mayor);
+        document.write("<br>menor = "+menor);
+
+    </script>
+</body>
+</html>

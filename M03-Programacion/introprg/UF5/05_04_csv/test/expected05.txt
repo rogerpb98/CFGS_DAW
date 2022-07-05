@@ -1,0 +1,14 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+Referències llegides: 2
+botiga> nom (enter cancel·la)> preu (enter 1234)> estoc (enter 24)> Modificat:
+	Vi: Roura blanc
+	Preu: 1540
+	Estoc: 24
+
+botiga> nom (enter cancel·la)> preu (enter 1485)> estoc (enter 12)> Modificat:
+	Vi: El Quintà
+	Preu: 1485
+	Estoc: 54
+
+botiga> Referències guardades: 2
+adéu

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let name = prompt("Introduce tu nombre y apellidos: ", "Juan Hernandez Martin");
+        document.write("Longitud nombre y apellidos sin espacios: "+ name.replaceAll(" ","").length);
+        document.write("<br>Nombre en minusculas: "+ name.toLowerCase());
+        document.write("<br>Nombre en mayusculas: "+ name.toUpperCase());
+        let name_tokens = name.split(" ");
+        document.write("<br>Nombre: " + name_tokens[0] + "<br>Apellido 1: "+ name_tokens[1] + "<br>Apellido 2: "+ name_tokens[2]);
+        let username1 = (name_tokens[0][0] + name_tokens[1] + name_tokens[2][0]).toLowerCase();
+        document.write("<br>Nombre de usuario1: "+ username1);
+        let username2 = (name_tokens[0].slice(0,3) + name_tokens[1].slice(0,3) + name_tokens[2].slice(0,3)).toLowerCase();
+        document.write("<br>Nombre de usuario2: "+ username2);
+
+    </script>
+</body>
+</html>

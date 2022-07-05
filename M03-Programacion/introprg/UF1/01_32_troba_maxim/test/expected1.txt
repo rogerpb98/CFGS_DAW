@@ -1,0 +1,2 @@
+Introdueix un valor
+El màxim és 0

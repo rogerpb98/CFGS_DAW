@@ -1,0 +1,2 @@
+add UN_PUZLE 6 4 R
+quit

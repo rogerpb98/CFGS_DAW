@@ -1,0 +1,2 @@
+add UN_PUZLE a 6 T
+quit

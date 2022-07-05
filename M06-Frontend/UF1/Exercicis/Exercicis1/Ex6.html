@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		var hour=prompt("Introduce el primer numero:");
+		var min=prompt("Introduce el segundo numero:");
+		var sec=prompt("Introduce el segundo numero:");
+
+		if (hour<00 || hour>23) {
+            document.write("<p>Wrong hour</p>");
+		}
+		else if (min<00 || min>59) {
+            document.write("<p>Wrong minutes</p>");
+		}
+		else if (sec<00 || sec>59) {
+            document.write("<p>Wrong seconds</p>");
+		}
+		else {
+			sec++;
+			if (sec==60) {
+				sec=00;
+				min++;
+				if (min==60) {
+					min=00;
+					hour++;
+					if (hour==24) {
+						hour=00;
+					}
+				}
+			}
+			document.write("<p>"+hour+":"+min+":"+sec+"</p>");
+		}
+	</script>
+</body>
+</html>

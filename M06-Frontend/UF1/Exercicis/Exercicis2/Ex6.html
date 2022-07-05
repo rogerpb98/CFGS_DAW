@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		var texte=prompt("cosa texto:");
+		console.log("tamaño nombre+apellidos "+nombreLletres(texte));
+		console.log("majuscules: "+texte.toUpperCase());
+		console.log("minuscules: "+texte.toLowerCase());
+		arrayTexte=texte.split(" ");
+		console.log("Nombre: " + arrayTexte[0]);
+		console.log("Apellido 1: " + arrayTexte[1]);
+		console.log("Apellido 2: " + arrayTexte[2]);
+		console.log("propuesta usuario 1: " + userGen(arrayTexte));
+		console.log("propuesta usuario 2: " + userGen2(arrayTexte));
+		function userGen(cositas) {
+			cosa1=cositas[0].charAt(0);
+			cosa2=cositas[1];
+			cosa3=cositas[2].charAt(0);
+			return cosa1.concat(cosa2).concat(cosa3);
+		}
+		function userGen2(cositas) {
+			cosa1=cositas[0].substr(0,3);
+			cosa2=cositas[1].substr(0,3);
+			cosa3=cositas[2].substr(0,3);
+			return cosa1.concat(cosa2).concat(cosa3);
+		}
+		function nombreLletres(frase) {
+			contador=0;
+			for (let i = 0; i < frase.length; i++) {
+				if (frase[i]!=" ") contador++;
+			}
+			return contador;
+		}
+		
+	</script>
+</body>
+</html>

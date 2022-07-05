@@ -1,0 +1,11 @@
+Caràcter?
+Character.getName('あ'): HIRAGANA LETTER A
+Character.isDigit('あ'): false
+Character.isJavaIdentifierStart('あ'): true
+Character.isJavaIdentifierPart('あ'): true
+Character.isLetter('あ'): true
+Character.isLowerCase('あ'): false
+Character.isUpperCase('あ'): false
+Character.isWhitespace('あ'): false
+Character.toLowerCase('あ'): あ
+Character.toUpperCase('あ'): あ

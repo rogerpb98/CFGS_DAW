@@ -1,0 +1,3 @@
+Gestor de puzles d'escacs. Escriviu help per ajuda.
+puzle> ERROR: mv «nom» «fila0» «columna0» «fila1» «columna1»
+puzle> adèu

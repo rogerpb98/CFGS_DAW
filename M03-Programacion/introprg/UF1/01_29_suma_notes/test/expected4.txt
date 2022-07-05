@@ -1,0 +1,7 @@
+Introdueix una nota
+Introdueix una nota
+Introdueix una nota
+Introdueix una nota
+Introdueix una nota
+Introdueix una nota
+La suma de les notes vàlides és 10

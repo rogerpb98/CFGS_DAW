@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  pad: 0;
+}
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+.c-header__stuff {
+  width: 50%;
+}
+.c-header__list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  justify-content: space-around;
+}
+.c-main {
+  width: 80%;
+  margin: auto;
+  background-color: lightgray;
+}
+.c-main__table {
+  width: 100%;
+}
+.c-main__row * {
+  text-align: center;
+}
+
+.modal-body img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

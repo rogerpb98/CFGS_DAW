@@ -1,0 +1,45 @@
+.background-orange {
+  background-color: #EB5E28;
+}
+
+.background-white {
+  background-color: #FFFCF2;
+}
+
+.background-light-gray {
+  background-color: #CCC5B9;
+}
+
+.background-dark-gray {
+  background-color: #403D39;
+}
+
+.font-orange {
+  color: #EB5E28;
+}
+
+.font-white {
+  color: #FFFCF2;
+}
+
+.font-light-gray {
+  color: #CCC5B9;
+}
+
+.font-dark-gray {
+  color: #403D39;
+}
+
+main {
+  background-color: #FFFCF2;
+}
+
+article > button {
+  background-color: #EB5E28;
+}
+
+.enviar {
+  background-color: #EB5E28;
+}
+
+/*# sourceMappingURL=colors.css.map */

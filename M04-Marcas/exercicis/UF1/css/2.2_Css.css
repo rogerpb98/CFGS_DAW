@@ -1,0 +1,35 @@
+/* Tots els elements de la pàgina */
+* { 
+font: 1em/1.3 Arial, Helvetica, sans-serif; 
+}
+
+/* Tots els paràgrafs de la pàgina */
+p { 
+color: #555; 
+}
+
+/* Tots els paràgrafs a dins de #primer */
+#primer p { 
+color: #336699; 
+}
+
+/* Tots els enllaços de la pàgina */
+a { 
+color: #CC3300; 
+}
+
+/* Els elements "em" dins de #primer */
+#primer em { 
+background: #FFFFCC; padding: .1em; 
+}
+
+/* Tots els elements "em" de la classe "especial" en toda la pàgina */
+em.especial { 
+background: #FFCC99; border: 1px solid #FF9900; padding: .1em; 
+}
+
+/* Elements "span" dins de .normal */
+.normal span { 
+font-weight: bold; 
+}
+

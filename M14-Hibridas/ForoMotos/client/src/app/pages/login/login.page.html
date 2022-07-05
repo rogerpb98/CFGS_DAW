@@ -1,0 +1,16 @@
+<app-header titol="Login/Register"></app-header>
+
+<ion-content [fullscreen]="true">
+  <form id="formulary">
+    <ion-item color="medium">
+      <ion-label for="name" position="floating">User:</ion-label>
+      <ion-input type="text" id="username" [(ngModel)]="username" name="username" value="" required> </ion-input>
+    </ion-item>
+    <ion-item color="medium">
+      <ion-label for="type" position="floating">Password:</ion-label>
+      <ion-input type="password" id="password" [(ngModel)]="password" name="password" value="" required> </ion-input>
+    </ion-item>
+  </form>
+  <ion-button type="button" expand="block" color="dark" (click)="login()">Log In</ion-button>
+  <ion-button type="button" expand="block" color="dark" (click)="register()">Register</ion-button>
+</ion-content>

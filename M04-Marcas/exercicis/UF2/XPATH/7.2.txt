@@ -1,0 +1,126 @@
+Expression no. 1. University name
+Define a path to obtain the element that contains the name of the university.
+//universitat/nom
+
+Expression no. 2. University city
+Define a path to obtain only the text that contains the name of the city ​​of the university.
+Hint: text() function
+//universitat/nom/text()
+
+Expression no. 3.Name degrees
+Define a path to obtain only the text that contains the name of the degrees.
+Hint: There are 6
+//carrera/nom/text()
+
+Expression no. 4. Year study plan
+Define a path to obtain the element that contains the year of the curriculum of the degrees.
+Hint: There are 6
+//carrera/plan/text()
+
+Expression no. 5. Student name
+Define a path to obtain the element that contains the student's name.
+Hint: There are 4
+//alumne/nom/text()
+
+Expression no. 6. Id of the degrees
+Define a path to obtain the id attribute of the degrees.
+Hint: There are 6
+//carrera/@id
+
+Expression no. 7. Id 'c01' degree
+Define a path that displays the degree element with the id attribute value is ‘c01’.
+Hint: use predicate conditions []
+//carrera[@id='c01']/nom
+
+Expression no. 8. Center of the 'c02' degree
+Define a path to show the element center where the degree with attribute id=’c02’ it’s in.
+Hint: use relatives paths in the []
+//centre[../@id='c01']
+
+Expression no. 9. Degree without Deputy Director (sotsdirector)
+Define a path to display the degree name element in which there is NO deputy director (sotsdirector).
+Hint: use the not() function
+//carrera/nom[../not(subdirector)]
+
+Expression no. 10 Degree with Deputy Director
+Define a path to display the degree name element in which there is a deputy director.
+//carrera/nom[../not(not(subdirector))]
+
+Expression no. 11. Student doing project
+Define a path to show the element name of the student who is doing the project.
+Hint: There are 2
+//alumne/nom/text()[../../estudis/(not(not(projecte)))]
+
+Expression no. 12. Degree code with enrolled students
+Define a path to display the code attribute of the degrees with any student enrolled.
+Hint: There are 4
+//carreres/carrera/@id[not(//carreres/carrera/../../alumnes/alumne/estudis/carrera/@codi=../@id)]
+
+Expression no. 13. Name and surnames of scholarship students
+Define a path to show first and last names of scholarship students.
+Hint: you can use concat()
+//alumne/concat(nom/text(),' ',cognom1/text(),' ',cognom2/text())
+
+Expression no. 14. Name of degree subjects 'c04'
+Define a path to show the name of the subjects of the degree C04
+Hint: They are 2. Pedagogy and Food Technology
+//assignatura/nom/text()[../../@titulacio="c04"]
+
+Expression no. 15. Second trimester subjects
+Define a path to show the name of the second trimester subjects.
+Hint: There are 5
+//assignatura/nom/text()[../../trimestre/text()='2']
+
+Expression no. 16. Subjects that do not have 4 credits
+Define a path to show the name of subjects that don’t have 4 theoric credits
+Hint: There are 5
+//assignatura/nom/text()[../../credits_teorics/text()!=4]
+
+Expression no. 17. Last student degree code
+Define a path to display the degree code attribute of the last student studying.
+Hint: you can use last ()
+//alumne[last()]/estudis/carrera/@codi
+
+Expression no. 18. Code subjects that women study
+Define a path to show the code attribute of the subjects that women are studying.
+Hint: There are 5 codes
+//alumne[./genere='Dona']//assignatura/@codi
+
+Expression no. 19. Student names in 'A02'
+Define a path to show the item name of students who are enrolled in the subject A02.
+Hint: As in the previous two, the predicate [] can go in the middle of the Xpath
+//alumne[./estudis/assinatures/assignatura/@codi='a02']//nom/text()
+
+Expression no. 20. Surnames of men
+Define a path to show the two surnames elements of all XML men.
+Hint: You can use the | character
+//alumne[genere/text()='Home']/(cognom1 | cognom2)
+
+Expression no. 21. Degree name of Víctor Manuel
+Define a path to show the element name of the Víctor Manuel degree.
+Hint: You can first locate the degree code of the student literally called 'Víctor Manuel', and then compare it with the degree code that is the son of degrees (in plural).
+//carreres/carrera[@id=//alumne[nom/text()='Víctor Manuel']/estudis/carrera/@codi]/nom
+
+Expression no. 22. Luisa subjects name
+Define a path to show the name element of the subjects that Luisa is studying.
+Hint: Similar to the above. In this case the result is Office Automation and Software Engineering.
+//assinatures/assignatura[@titulacio=//alumne[nom/text()='Luisa']/estudis/carrera/@codi]/nom
+
+Expression no. 23. First surname of students in ‘Enginyeria del Software’
+Define a path to show the first surname element of students enrolled in the subject 'Software Engineering'
+Hint: The result is Pérez
+//alumne[/estudis/carrera/@codi=//carreres/carrera[nom/text()='I.T. Informàtica']/@id]/nom/text()
+//carreres/carrera[nom/text()='I.T. Informàtica']/@id
+
+//alumne[/estudis/carrera/@codi=//carreres/carrera[nom/text()='I.T. Informàtica']/@id]
+
+//alumne/estudis/carrera/@codi
+//carreres/carrera[nom/text()='I.T. Informàtica']/@id
+
+Expression no. 24. Degrees name
+Define a path to show the item degree name of the students that are enrolled in the subject 'Food Technology'.
+
+
+Expression no. 25. Students name studying plans before to 2012
+Define a path to show the item (students) name studying degrees plans before 2012
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/functions.js"></script>
+</head>
+<body onload="printList(lista)">
+    <button onclick="orderList(lista, 'asc')">asc: name & house</button>
+    <button onclick="orderList(lista, 'desc')">desc: name & house</button>
+    <div>
+        <p>House</p>
+        <input type="text" name="casa" id="casa">
+        <p>Born before</p>
+        <input type="text" name="year" id="year">
+        <button onclick="filtrar()">Filtrar</button>
+    </div>
+    <div id="llistat"></div>
+</body>
+</html>

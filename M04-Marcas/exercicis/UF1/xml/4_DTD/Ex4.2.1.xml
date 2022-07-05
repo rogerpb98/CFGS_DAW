@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE artists[
+<!ELEMENT artists (performer*)>
+<!ELEMENT performer ((name | nick),born)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT nick (#PCDATA)>
+<!ELEMENT born (#PCDATA)>
+]>
+<artists>
+    <performer>
+        <name>Antonio Vivaldi</name>
+        <born>4-03-1678</born>
+    </performer>
+    <performer>
+        <nick>The old wig</nick>
+        <born>21-03-1685</born>
+    </performer>
+</artists>

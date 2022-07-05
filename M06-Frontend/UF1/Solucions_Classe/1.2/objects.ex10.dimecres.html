@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var year1 = prompt("Escriu un any");
+        var year2 = prompt("Escriu un altre any");
+
+        var found = false;
+
+        while (!found && year1 < year2) {
+            var date = new Date(year1, 0, 1);
+            if (date.getDay() == 3) {
+                found = true;
+            } else {
+                year1++;
+            }
+        }
+
+        if (found) {
+            document.write("El dia " + date.getDate() + " del " + (date.getMonth() + 1) + " de " + date.getFullYear() + " va ser dimecres");
+        } else {
+            document.write("No hi ha cap any en aquest rang en que l'un de gener fos dimecres");
+        }
+
+    </script>
+</body>
+</html>

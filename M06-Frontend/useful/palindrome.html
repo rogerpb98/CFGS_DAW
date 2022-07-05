@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function normalizeString(string) {
+            string = string.replace(/[^a-zA-Z\d]/, "").toLowerCase();
+            return string;
+        }
+        function isPalindrome(string) {
+            if (string.length==1) {
+                return true;
+            }
+            else {
+                string = normalizeString(string);
+                reverseString = string.split("").reverse().join("");
+                if (string==reverseString) return true;
+            } 
+            return false
+        }
+        userInput = prompt("introdueix un text o numero");
+        document.write( (isPalindrome(userInput)) ? "Si es un palindromo" : "No es un palindromo" );
+    </script>
+</body>
+</html>

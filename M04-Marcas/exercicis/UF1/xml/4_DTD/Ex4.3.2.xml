@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filmoteca [
+<!ELEMENT filmoteca (peli*, autor)>
+<!ELEMENT peli (titol, director)>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+]>
+<filmoteca>
+    <peli>
+        <titol>Amb faldes i a lo loco</titol>
+        <director>Billy Wilder</director>
+    </peli>
+    <peli>
+        <titol>Sopa de goig</titol>
+        <director>Leo McCarey</director>
+    </peli>
+    <autor>barto</autor>
+</filmoteca>

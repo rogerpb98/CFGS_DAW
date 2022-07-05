@@ -1,0 +1,3 @@
+cp PUZLE1 PUZLE2
+sí
+quit

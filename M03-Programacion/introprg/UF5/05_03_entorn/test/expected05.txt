@@ -1,0 +1,3 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+botiga> nom (enter cancel·la)> preu (en cèntims)> estoc (enter sense estoc)> ERROR: el valor ha de ser un enter positiu
+botiga> adéu

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        /* Demanar a l’usuari 3 números corresponents cadascun a una hora, un minut i un segon.
+           Mostrar la hora corresponent a un segon més tard a la introduïda. */
+
+        var hora = parseInt(prompt("Hora : ","Valor de 0 a 23"));
+        var minut = parseInt(prompt("Minut : ", "Valor de 0 a 59"));
+        var segon = parseInt(prompt("Segon : ", "Valor de 0 a 59"));
+
+        console.log(hora+","+minut+","+segon);
+
+        segon++;
+
+        if (segon == 60){
+            segon = 0;
+            minut++;
+            if (minut == 60){
+                minut = 0;
+                hora++;
+                if (hora == 24) hora = 0;
+            }
+        }
+
+        document.write(hora+":"+minut+":"+segon);
+
+    </script>
+</body>
+</html>

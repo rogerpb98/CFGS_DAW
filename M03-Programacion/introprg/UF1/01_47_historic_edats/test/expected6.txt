@@ -1,0 +1,4 @@
+nom?
+edat?
+any actual?
+Entrada errònia

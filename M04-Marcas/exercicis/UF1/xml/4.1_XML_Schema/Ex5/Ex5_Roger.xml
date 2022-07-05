@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RUTA_I_NOM_FITXER_XSD">
+    <computer laptop="true">
+        <brand>Toshiba</brand>
+        <model>Miyamoto</model>
+        <RamGB>8</RamGB>
+        <diskGB>500</diskGB>
+    </computer>
+    <computer laptop="false">
+        <brand>Acer</brand>
+        <model>Baijan</model>
+        <RamGB>16</RamGB>
+        <diskGB>250</diskGB>
+    </computer>
+    <computer laptop="true">
+        <brand>hp</brand>
+        <model>joputa</model>
+        <RamGB>16</RamGB>
+        <diskGB>500</diskGB>
+    </computer>
+</student>

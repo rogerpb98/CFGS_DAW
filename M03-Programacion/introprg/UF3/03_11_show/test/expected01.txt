@@ -1,0 +1,10 @@
+Gestor de puzles d'escacs. Escriviu help per ajuda.
+puzle> TCADRACT
+PPPPPPPP
+········
+········
+········
+········
+pppppppp
+tcadract
+puzle> adèu

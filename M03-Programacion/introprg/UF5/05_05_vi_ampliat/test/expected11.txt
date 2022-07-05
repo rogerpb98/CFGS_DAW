@@ -1,0 +1,14 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+Referències llegides: 1
+botiga> ref> nom> tipus> preu max.> collita> estoc min.> D.O.> lloc> Trobat:
+	Ref: ROURABLA20200232
+	Nom: Roura blanc
+	Tipus: blanc
+	Preu: 606
+	Collita: 2020
+	Estoc: 32
+	D.O.: Alella
+	Lloc: P21E45N55E
+
+botiga> Referències guardades: 1
+adéu

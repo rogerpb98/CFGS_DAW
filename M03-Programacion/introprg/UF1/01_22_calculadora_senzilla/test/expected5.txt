@@ -1,0 +1,4 @@
+Operand1?
+Operador?
+Operand2?
+No es pot dividir entre 0

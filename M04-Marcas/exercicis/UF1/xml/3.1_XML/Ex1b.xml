@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pelicules>
+    <peli>
+        <autor> barto </autor>
+        <titol> Amb faldes i a lo loco </titol>
+        <director> Billy Wilder </director>
+    </peli>
+    <peli>
+        <autor> barto </autor>
+        <titol> Sopa de goig </titol>
+        <director> Leo McCarey </director>
+    </peli>
+</pelicules>

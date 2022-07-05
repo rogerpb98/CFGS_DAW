@@ -1,0 +1,1 @@
+curl -X POST -d '{"user_name":"ruchi99", "password": "ruchi100", "email": "rogelio@gmail.com"}' localhost:9000/user/register

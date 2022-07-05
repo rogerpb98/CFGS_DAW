@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dies a data</title>
+
+</head>
+<body>
+    <script>
+
+        /* Demanar un número a l’usuari que indicarà un nombre de dies. 
+           Mostrar per pantalla la conversió d’aquest número a anys, mesos i dies (no cal tenir presents 
+           els anys de traspàs). Podeu suposar que tots els mesos tenen 30 dies.*/
+
+        var dies = parseInt(prompt("Nombre de dies: "));
+
+        var anys = parseInt (dies / 360); // Com els mesos son de 30 dies, suposem que els anys son de 30*12 = 360
+        var r1 = dies % 360; 
+
+        console.log(anys+","+r1);
+
+        mesos = parseInt(r1 / 30);
+
+        dies = r1 % 30;
+
+        document.write("anys = "+anys+", mesos = "+mesos+", dies = "+dies);
+    
+    </script>    
+</body>
+</html>

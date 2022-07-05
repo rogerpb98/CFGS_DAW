@@ -1,0 +1,10 @@
+Gestor de puzles d'escacs. Escriviu help per ajuda.
+puzle> Comandes disponibles:
+help
+cp «nom1» «nom2»
+add «nom» «figura» «fila» «columna»
+del «nom» «fila» «columna»
+mv »nom» «fila0» «columna0» «fila1» «columna1»
+new «nom»
+quit
+puzle> adèu

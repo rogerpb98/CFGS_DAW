@@ -1,0 +1,48 @@
+Creem uns quants vins
+Creat
+	Vi: Vi nr. 0
+	Preu: 1000
+	Estoc: 10
+
+Creat
+	Vi: Vi nr. 1
+	Preu: 1100
+	Estoc: 11
+
+Creat
+	Vi: Vi nr. 2
+	Preu: 1200
+	Estoc: 12
+
+Afegim els vins creats a la botiga
+En afegir
+	Vi: Vi nr. 0
+	Preu: 1000
+	Estoc: 10
+la botiga ens respon 
+	Vi: Vi nr. 0
+	Preu: 1000
+	Estoc: 10
+
+En afegir
+	Vi: Vi nr. 1
+	Preu: 1100
+	Estoc: 11
+la botiga ens respon 
+	Vi: Vi nr. 1
+	Preu: 1100
+	Estoc: 11
+
+En afegir
+	Vi: Vi nr. 2
+	Preu: 1200
+	Estoc: 12
+la botiga ens respon null
+
+Cerquem uns vins
+En cercar Vi nr. 1 botiga ens respon 
+	Vi: Vi nr. 1
+	Preu: 1100
+	Estoc: 11
+
+En cercar Vi nr. 2 botiga ens respon null

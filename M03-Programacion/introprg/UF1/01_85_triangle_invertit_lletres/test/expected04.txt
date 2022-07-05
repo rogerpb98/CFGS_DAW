@@ -1,0 +1,9 @@
+Text?
+a, d, l, a, u, m, o, R
+d, l, a, u, m, o, R
+l, a, u, m, o, R
+a, u, m, o, R
+u, m, o, R
+m, o, R
+o, R
+R

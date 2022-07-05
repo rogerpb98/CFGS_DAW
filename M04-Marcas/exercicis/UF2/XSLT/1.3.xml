@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="1.3.xsl" type="text/css"?>
+<cataleg>
+        <llibre>
+                <titol>Don Quijote</titol>
+                <autor>Cervantes</autor>
+        </llibre>
+        <llibre>
+                <autor>Lorca</autor>
+                <titol>Poeta en Nueva York</titol>
+        </llibre>
+</cataleg>

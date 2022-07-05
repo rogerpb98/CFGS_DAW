@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+    <!--Ex1.1-->
+    <ul id="todo_list">
+        <li>Anar a comprar</li>
+        <li>Preparar el sopar</li>
+        <li>Estudiar jQuery</li>
+    </ul>
+    <!--Ex1.2-->
+    <form action="">
+        <label for="afegir">Añade a la lista:</label>
+        <input type="text" id="afegir" name="afegir">
+        <button type="button">Añadir</button>
+    </form>
+    <br>
+    <!--Ex2-->
+    <select id="desplegable">
+        <option value="">ESCOJA UNA OPCION</option>
+        <option value="http://google.es">google</option>
+        <option value="http://wikipedia.org">wiki</option>
+        <option value="http://yahoo.es">yahoo</option>
+        <option value="http://rojadirecta.es">rojadirecta</option>
+    </select>
+    <br>
+    <!--Ex3-->
+    <p id="contenidos_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque
+        massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna
+        consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_1" href="#">Ocultar contenidos</a>
+    <br />
+
+    <p id="contenidos_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque
+        massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna
+        consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_2" href="#">Ocultar contenidos</a>
+    <br />
+
+    <p id="contenidos_3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque
+        massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna
+        consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_3" href="#">Ocultar contenidos</a>
+    <!--Ex4-->
+    <br>
+    <img src="./chrome.jpg" alt="">
+    <!--Ex5-->
+    <div id="info"></div>
+    <!--Ex6-->
+
+    <script>
+        //Ex1.1
+        $("li").each(function(index) {
+            $("li").eq(0).css("color", "green");
+            $("li").not(":first").css("color", "red");
+        });
+        //Ex1.2
+        $("button").on("click", function(event) {
+            $("ul").append("<li>" + $("#afegir").val() + "</li>");
+        });
+        //Ex2
+        $("option").on("click", function(event) {
+            window.location = $(this).val();
+        });
+        //Ex3
+        $("a").each(function(index) {
+            $(this).on("click", function(event) {
+                $(this).prev().toggle();
+
+                cambiarTextoContenidos($(this));
+            });
+        });
+        /*$("#enlace_1").on("click", function(index) {
+            $("#contenidos_1").toggle();
+            cambiarTextoContenidos($(this));
+        });
+        $("#enlace_2").on("click", function(index) {
+            $("#contenidos_2").toggle();
+            cambiarTextoContenidos($(this));
+        });
+        $("#enlace_3").on("click", function(index) {
+            $("#contenidos_3").toggle();
+            cambiarTextoContenidos($(this));
+        });*/
+        function cambiarTextoContenidos(elemento) {
+            if ((elemento).text == "Mostrar contenidos") {
+                $(elemento).text("Ocultar contenidos");
+            } else {
+                $(elemento).text("Mostrar contenidos");
+            }
+        }
+        //Ex4
+        $("img").mouseenter(function(index) {
+            $(this).attr("src", "firefox.jpg");
+        });
+        $("img").mouseleave(function(index) {
+            $(this).attr("src", "chrome.jpg");
+        });
+        //Ex5
+        $(window).on("keydown keyup keypress", function(params) {
+                let keyInfo =
+                    "<p>Tipus d'event: " + params.type +
+                    "<br>Keycode: " + params.keyCode +
+                    "<br>Caràcter premut: " + params.key + "</p>";
+                $("#info").append(keyInfo);
+            })
+            //Ex6
+    </script>
+</body>
+
+</html>

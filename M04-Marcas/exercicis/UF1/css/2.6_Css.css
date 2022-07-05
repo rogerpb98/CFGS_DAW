@@ -1,0 +1,86 @@
+ul,
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+h1,
+h2,
+h3,
+p,
+form {
+    margin: 0;
+    padding: 0
+}
+.clear {
+    clear: both
+}
+img {
+    border: none
+}
+#contenidor {
+    width: 90%;
+    max-width: 900px;
+    width: expression(document.body.clientWidth > 901? "900px": "auto");
+    margin: 0 auto
+}
+#cap,
+#menu,
+#lateral,
+#contenidor,
+#contenidor #principal,
+#contenidor #secundario,
+#pie {
+    border: 2px solid #777
+}
+#cap {
+    clear: both;
+    padding: 1em;
+}
+#menu {
+    clear: both;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+#noticies, #publicitat, #principal, #secundario {
+    padding: 0.5em
+}
+#lateral {
+    float: left;
+    width: 20%
+}
+#contenidor {
+    float: right;
+    width: 78%
+}
+#contenidor #principal {
+    float: left;
+    width: 78%
+}
+#contenidor #secundario {
+    float: right;
+    width: 20%
+}
+#pie {
+    clear: both
+}
+#cap #logo {
+    float: left
+}
+#cap #buscador {
+    float: right
+}
+#menu ul#menu_principal li {
+    display: inline;
+    float: left
+}
+#contenidor #principal .articulo img {
+    width: 100px;
+    float: left
+}
+#pie .enlaces {
+    float: left
+}
+#pie .copyright {
+    float: right
+}

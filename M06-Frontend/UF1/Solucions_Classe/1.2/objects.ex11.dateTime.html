@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const oneDayMillis = 24 * 60 * 60 * 1000;
+
+        let now = new Date();
+
+        let firstDayYear = new Date(now.getFullYear(), 0, 1);
+
+        let nbrDays = parseInt((now.getTime() - firstDayYear.getTime()) / oneDayMillis);
+
+        let percDaysYear = ((nbrDays / 365) * 100).toFixed(1);
+
+        let startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()); // start of today
+
+        let percDayToday = ((now.getTime() - startOfToday.getTime()) * 100 / oneDayMillis).toFixed(1);
+
+        document.write("Avui és " + now.getDate() + " del " + (now.getMonth() + 1) + " de " + now.getFullYear());
+        document.write("<br>Nombre de setmanas que han passat de l'any = " + parseInt(nbrDays / 7));
+        document.write("<br>Percentatge de dies transcorreguts de l’any = " + percDaysYear + "%");
+        document.write("<br>Nombre de dies que resten d’any = " + (365 - nbrDays));
+        document.write("<br>Ara són les " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
+        document.write("<br>Percentatge de dia transcorregut = " + percDayToday + "%");
+        document.write("<br>Percentatge de dia que queda = " + ((100 - percDayToday)).toFixed(1) + "%");
+
+    </script>
+</body>
+</html>

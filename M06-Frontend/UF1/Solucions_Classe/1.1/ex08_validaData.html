@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Data</title>
+
+</head>
+<body>
+
+    <script>
+
+        /****************/
+        /* FUNCTIONS    */
+        /****************/
+        function checkDate(year, month, day) {
+
+            year = parseInt(year);
+            month = parseInt(month);
+            day = parseInt(day);
+
+            console.log(year + "," + month + "," + day);
+
+            // check year
+            if (isNaN(year)) {
+                return "Year invalid. Year has to be an integer";
+            }
+
+            // check month
+            if (isNaN(month) || month < 1 || month > 12) {
+                return "Month invalid. It has to be 1 to 12";
+            }
+
+            // check day
+            if (isNaN(day) || day < 1 || day > 31) {
+                return "Day invalid. It has to be 1 to 31";
+            }
+
+            // Here day is lesser or equal than 31
+            if (month == 4 || month == 6 || month == 9 || month == 11) { // these months have 30 days
+                if (day == 31) {
+                    return "Month " + month + " has 30 days";
+                }
+            }
+
+            if (month == 2) { // this month have either 28 or 29 days
+                if (isLeap(year) ){
+                    if (day > 29){
+                        return "Month " + month + " has 29 days";
+                    }
+                } else {
+                    if (day > 28){
+                        return "Month " + month + " has 28 days";
+                    }
+                }
+            }
+
+            return "Valid date: " + day + "/" + month + "/" + year;
+        }
+
+        function isLeap(year) {
+
+            if (year % 400 == 0){
+                return true;
+            } else {
+                if ((year % 4 == 0) && (year % 100 != 0)){
+                    return true;
+                } 
+            }
+            return false;
+        }
+
+        /****************/
+        /* MAIN PROGRAM */
+        /****************/
+        let year = prompt("Please enter year", 2020);
+        let month = prompt("Please enter month", 1);
+        let day = prompt("Please enter day", 1);
+
+        alert(checkDate(year, month, day));
+
+    </script>
+</body>
+</html>

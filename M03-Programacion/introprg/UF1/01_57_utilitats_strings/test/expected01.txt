@@ -1,0 +1,15 @@
+Text principal?
+Text secundari ?
+Número positiu?
+"String!".length(): 7
+"String!".startsWith("string!"): false
+"String!".endsWith("string!"): false
+"String!".equals("string!"): false
+"String!".equalsIgnoreCase("string!"): true
+"String!".isBlank(): false
+"String!".isEmpty(): false
+"String!".charAt(3): i
+"String!".concat("string!"): String!string!
+"String!".repeat(3): String!String!String!
+"String!".toUpperCase(): STRING!
+"String!".toLowerCase(): string!

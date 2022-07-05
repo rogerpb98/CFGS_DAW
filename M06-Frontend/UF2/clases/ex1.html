@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function filtrarEntero(array, cadena1, cadena2) {
+            return array.filter(item => {
+                array = item.split(" ");
+                if (array[0]==cadena1 && array[1]==cadena2) return true;
+            });
+        }
+        function filtrar(array, cadena) {
+            return array.filter(item => {
+                if (item.startsWith(cadena)) return true;
+            });
+        }
+        let usuaris = {
+            noms : ["joan garcia", "jaume pontons", "ana riu", "marta aran", "alex fornell", "mariona cots"],
+            trobar: function() {
+                switch (arguments.length) {
+                    case 0:
+                        console.log(this.noms);
+                        return this.noms;
+                        break;
+                    case 1:
+                        filtrados = filtrar(this.noms, arguments[0])
+                        console.log(filtrados);
+                        break;
+                    case 2:
+                        filtrados = filtrarEntero(this.noms, arguments[0], arguments[1])
+                        console.log(filtrados);
+                        break;
+                }
+            }
+        };
+        usuaris.trobar();
+        usuaris.trobar("j");
+        usuaris.trobar("joan", "garcia");
+    </script>
+</body>
+</html>

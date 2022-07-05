@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cadena1 = prompt("Introduce una cadena de cosas separadas por coma: ");
+        let cadena2 = prompt("Introduce una cadeca de cosas separadas por coma ");
+        cadena1 = cadena1.split(",");
+        cadena2 = cadena2.split(",");
+        let cadena3 = new Array();
+        let longitud=0;
+        if (cadena1.length>cadena2.length) {
+            longitud=cadena1.length;
+        }
+        else {
+            longitud=cadena2.length;
+        }
+        for (let i = 0; i < longitud; i++) {
+            if (cadena1[i]) cadena3.push(cadena1[i]);
+            if (cadena2[i]) cadena3.push(cadena2[i]);
+        }
+        document.write("<p> "+cadena3+"</p>");
+    </script>
+</body>
+</html>

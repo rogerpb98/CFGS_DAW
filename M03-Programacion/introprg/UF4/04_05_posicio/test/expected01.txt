@@ -1,0 +1,3 @@
+Vides inicials: 7
+Posició inicial: estirat
+Posició final: assegut

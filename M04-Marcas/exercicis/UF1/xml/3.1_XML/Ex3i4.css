@@ -1,0 +1,8 @@
+section > article {
+  padding-bottom: 5px;
+  padding-top: 50px;
+  border-bottom: 1px solid;
+}
+section > h2 {
+  text-align: center;
+}

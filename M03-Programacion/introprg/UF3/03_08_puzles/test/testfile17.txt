@@ -1,0 +1,2 @@
+cp PUZLE1 PUZLE2
+quit

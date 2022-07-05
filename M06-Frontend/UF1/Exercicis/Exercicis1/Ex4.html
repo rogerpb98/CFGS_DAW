@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		var numero1=parseInt(prompt("Introduce el primer numero:"));
+		var numero2=parseInt(prompt("Introduce el segundo numero:"));
+		var numero3=parseInt(prompt("Introduce el tercer numero:"));
+		var arrayNumeros = [numero1, numero2, numero3];
+		var suma=0;
+		for (let i = 0; i < arrayNumeros.length; i++) {
+			document.write("<p>"+arrayNumeros[i]+"</p>");
+			suma += arrayNumeros[i];
+		}
+		document.write("<p>"+suma+"</p>");
+		document.write("<p>Nombre mes alt: "+Math.max(numero1, numero2, numero3)+"</p>");
+		document.write("<p>Nombre mes baix: "+Math.min(numero1, numero2, numero3)+"</p>");
+		document.write("<p>Mitjana: "+suma/arrayNumeros.length+"</p>");
+	</script>
+</body>
+</html>

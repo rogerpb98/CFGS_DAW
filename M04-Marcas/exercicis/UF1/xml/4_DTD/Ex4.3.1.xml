@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE esportistes [
+<!ELEMENT esportistes (esportista*)>
+<!ELEMENT esportista (nom, esport)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT esport (#PCDATA)>
+]>
+<esportistes>
+    <esportista>
+        <nom>Jesse Owens</nom>
+        <esport>Atletisme</esport>
+    </esportista>
+    <esportista>
+        <nom>Mark Spitz</nom>
+        <esport>Natació</esport>
+    </esportista>
+</esportistes>

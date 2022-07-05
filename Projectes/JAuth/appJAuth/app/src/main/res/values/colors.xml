@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="oxfordBlue">#16263D</color>
+    <color name="darkCornflowerBlue">#2C3C73</color>
+    <color name="darkCornflowerBlue_Transp">#C42C48A5</color>
+    <color name="steelBlue">#5984AB</color>
+    <color name="babyBlue">#9ADBF6</color>
+    <color name="lightCyan">#D3F4FF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

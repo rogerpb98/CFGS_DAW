@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="nota">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="per_a" type="xs:string" />
+                <xs:element name="de" type="xs:string" />
+                <xs:element name="assumpte" type="xs:string" />
+                <xs:element name="contingut" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

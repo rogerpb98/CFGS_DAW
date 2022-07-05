@@ -1,0 +1,120 @@
+Pregunta 1
+Escriu l'snippet que es necessita inserir a una pàgina web HTML per a poder enviar fitxers al nostre servidor i tractar-los al backend.
+
+<form action="fitxer.php" method="post"> 
+    <input type="file"> <input type="submit"> 
+</form>
+
+Pregunta 2
+Quin és el nom de la variable global de PHP que permet la recepció de fitxers al backend i quina informació conté.
+Cal respondre el nom de la variable global, el nom dels camps que conté i una petita descripció que permeti entendre quina informació conté cada camp.
+
+$_FILES 
+
+Atributs: 
+name - nom del fitxer 
+type - tipus i extensió del fitxer 
+tmp_name - ruta temporal al servidor 
+error - logs 
+size - mida del fitxer 
+pos - posicio del fitxer si s'han pujat més d'1
+
+Pregunta 3
+Quina funció permet obrir fitxers en php i quina és la seva signatura?
+
+fopen("ruta.txt", "r") //(r)ead, (w)rite, (a)ppend, e(x)ecute
+
+Pregunta 4
+Quin dels següents modes d'apertura d'un fitxer són vàlids a PHP.
+
+k
+
+w
+
+x
+
+w+
+
+b
+
+e
+
+h
+
+q
+
+r
+
+t
+
+f
+
+l
+
+a+
+
+o
+
+g
+
+r+
+
+a
+
+Pregunta 5
+Escriu l'snippet que permet realitzar la connexió a una base de dades mySQL utilitzant la llibreria mysqli. Només la connexió, sense realitzar consultes.
+
+$con = mysqli_connect($host, $user, $password, $db);
+
+Pregunta 6
+Escriu l'snippet que permet realitzar una connexió a una base de dades sql amb la llibreria pdo.
+
+$con = new PDO("mysql:host=".$host.";dbname=".$db, $user, $password);
+
+Pregunta 7
+Explica què és l'SQL injection i posa un exemple de com explotar aquest atac.
+
+L'sql injection es executar codi a la base de dades aprofitant que el programador no hagi sanat l'input. Exemple: SELECT password from users where "%"=hola
+
+Pregunta 8
+Què és una consulta preparada (SQL) i quins avantatges té realitzar-les.
+
+Una consulta preparada es una consulta que espera certs parametres concrets i s'executa al rebrels, aquestes consultes van bé per evitar sql injections.
+
+Pregunta 9
+Explica com funciona el hashing de paraules de pas a les bases de dades:
+
+    En què consisteix
+    Nom dels principals algorismes utilitzats i quins es consideren vulnerables actualment.
+    Com podem evitar que passwords idèntics generin hashes idèntics i d'aquesta forma millorar la seguretat dels nostres usuaris?
+
+
+
+Consisteix en utilitzar un algorisme per convertir una cadena de caràcters en una altra 
+sha1 i md5 son els algorismes principals, md5 es considera vulnerable 
+Podem evitar passwords idèntics afegint salt i pepper (una cadena al principi i/o al final de la contrasenya) perque al generar el hash el resultat sigui diferent.
+
+Pregunta 10
+Descriu breument el funcionament i principals característiques de MongoDB.
+Quins avantatges i inconvenients té respecte d'una base de dades SQL?
+
+pros: 
+Rapidesa per al desenvolupador. 
+Les dades es guarden en format JSON i son facils de parsejar. 
+De fet mongo fa servir BSON, per lo tant també pots guardar en format Date. 
+Mès escalable que las relacionals, ja que els camps son dinamics. cons: 
+Al no ser una estructura fixa i ben definida, el programador pot cometre errors mès facilment
+
+Pregunta 11
+Totes les respostes són correctes i puntuen igual, però si us plau, selecciona la que sincerament creguis que millor s'adapta a tú.
+Creus que triaries MongoDB per a implementar un projecte teu en un futur?
+
+Amb molta probabilitat
+
+Només si em veig obligat
+
+Poc probable
+
+NO, en absolut
+
+Si, n'estic segur.

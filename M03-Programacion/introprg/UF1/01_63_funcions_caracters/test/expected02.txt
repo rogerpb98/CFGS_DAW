@@ -1,0 +1,11 @@
+Caràcter?
+Character.getName('H'): LATIN CAPITAL LETTER H
+Character.isDigit('H'): false
+Character.isJavaIdentifierStart('H'): true
+Character.isJavaIdentifierPart('H'): true
+Character.isLetter('H'): true
+Character.isLowerCase('H'): false
+Character.isUpperCase('H'): true
+Character.isWhitespace('H'): false
+Character.toLowerCase('H'): h
+Character.toUpperCase('H'): H

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarCambio(arrayPaid){
+            arrayPaid.forEach(element => {
+                document.write("<p>"+element+"</p>");
+            });
+        }
+        function calcularCambio(price, paid){
+            let cashback=paid-price;
+            let arrayMoney = [0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 50, 100, 500];
+            let arrayPaid = [];
+            while (sumarArray(arrayPaid) != cashback) { // Si la suma dels elements de l'array no supera el canvi a retornar entra
+                for (let i = arrayMoney.length; i >= 0; i--) {// Recorre tots els elements de l'array començant pel final
+                    if (sumarArray(arrayPaid)+arrayMoney[i]<=cashback) {// Si la suma del billet amb el pagat no supera el canvi a retornar entra
+                        arrayPaid.push(arrayMoney[i]); // Afegeix el bitllet/moneda a l'array
+                        break;
+                    }
+                } 
+            }
+            return arrayPaid
+        }
+        function sumarArray(array){
+            let total=0;
+            array.forEach(element => {
+                total+=element;
+            });
+            return total;
+        }
+        // Main
+        let price=parseInt(prompt("Introdueix preu: "));
+        let paid=parseInt(prompt("Introdueix quant pagues: "));
+        if (paid<price) {
+            alert("You didn't pay enough");
+        }
+        else {
+            cambio=calcularCambio(price, paid);
+            mostrarCambio(cambio);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        /*PART 1*/
+        function digitosDistintos(cadena) {
+            digitosDiferentes="";
+            for (let i = 0; i < cadena.length; i++) {
+                if (digitosDiferentes.includes(cadena[i]) === false) { 
+                    //si el caracter no esta en la lista de digitos lo añade
+                    digitosDiferentes += cadena[i];
+                }
+            }
+            return digitosDiferentes.length;
+        }
+        function checkRules(respuesta) {
+            if (respuesta.length>4) return true; //si el numero tiene ams de 4 digitos vuelve a preguntar
+            if (digitosDistintos(respuesta)<2) return true; //si tiene menos de 2 digitos distintos vuelve a preguntar
+            return false;
+        }
+
+        do {
+            userInput = prompt("introdueix un nombre de 4 digits amb al menys 2 nombres diferents");
+        } while (checkRules(userInput));
+        
+        userInput = String(userInput).padStart(4, '0'); //añade 0 a la izquierda hasta tener 4 digitos
+
+        numerito=userInput;
+        /*FI PART 1*/
+        contador=0;
+        do {
+            nombreNormal = userInput.split('').sort().join('');
+            nombreInvertit = userInput.split('').sort().reverse().join('');
+            (nombreNormal>nombreInvertit) ? userInput=nombreNormal-nombreInvertit : userInput=nombreInvertit-nombreNormal;
+            userInput = String(userInput).padStart(4, '0');
+            console.log(userInput);
+            contador++
+        } while (userInput != 6174);
+        document.write("<p>Numero "+numerito+" arribarà a la constant de Kaprekar en "+contador+" iteracions</p>");
+    </script>
+</body>
+</html>

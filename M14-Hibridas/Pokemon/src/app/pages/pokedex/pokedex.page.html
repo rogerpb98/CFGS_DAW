@@ -1,0 +1,30 @@
+<app-header titol="Pokédex"></app-header>
+
+
+<ion-content color="tertiary">
+    <ion-list id="cards">
+        <ion-card *ngFor="let pkmn of pokemons;let i=index;">
+            <ion-card-header color="secondary">
+                <button class="delete" (click)=deletePokemon(pkmn.name)>x</button>
+                <div>
+                    <div>
+                        <ion-card-title>{{pkmn.name}}</ion-card-title>
+                        <ion-card-subtitle *ngFor="let tipo of pkmn.type;let j=index;">{{pkmn.type[j]}}</ion-card-subtitle>
+                    </div>
+                    <img src="../../../assets/pokemons/{{pkmn.image}}" alt="">
+                </div>
+            </ion-card-header>
+            
+            <ion-card-content>
+                <ion-list>
+                    <ion-item color="tertiary" lines="none">
+                        <ion-label><span class="listAtributeTitle">Height: </span> {{pkmn.height}}</ion-label>
+                    </ion-item>
+                    <ion-item color="tertiary" lines="none">
+                        <ion-label><span class="listAtributeTitle">Weight: </span>{{pkmn.weight}}</ion-label>
+                    </ion-item>
+                </ion-list>
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
+</ion-content>

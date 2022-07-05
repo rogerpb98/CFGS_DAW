@@ -1,0 +1,10 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+Referències llegides: 2
+botiga> nom (enter cancel·la)> A eliminar:
+	Vi: Roura blanc
+	Preu: 1234
+	Estoc: 0
+
+Segur?> Eliminat
+botiga> Referències guardades: 1
+adéu

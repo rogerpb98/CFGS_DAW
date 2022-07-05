@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filter image</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<script>
+	$( document ).ready(function() {
+		var arr_range = ["grayscale", "brightness", "contrast", "hue-rotate", "invert", "opacity", "saturate", "sepia"];
+		var arr_values = [0, 100, 100, 0, 0, 100, 100, 0];
+	
+		
+		$(".custom-range").on("input change", function() {
+			var range = $(this).attr("id");
+			var value = $("#" + range).val();
+			
+			actValues(range, value);
+			
+			if($(".form-check-input").is(":checked")){
+				calcFilters();
+
+			}else{			
+				reset(range);
+				
+				if(range=="hue-rotate"){
+					var units="deg";
+				}else{
+					var units="%";
+				}
+				
+				$(".image").css("filter", range + "(" + value + units +")");	
+			}
+		});
+		
+		
+		$(".form-check-input").on("input change", function() {		
+			var rangeCbx = $(this).attr("id");
+			var range = rangeCbx.substring(0, rangeCbx.length-3);
+			
+			for(var i=0; i<arr_range.length; i++){
+				if($("#" + arr_range[i] + "Cbx").is(":checked")) {
+					$("#" + arr_range[i]).prop("disabled", false);
+				}else{
+					$("#" + arr_range[i]).prop("disabled", true);
+					
+					actValues(arr_range[i], arr_values[i]);
+				
+					$("#" + arr_range[i]).val(arr_values[i]);
+					
+					calcFilters();
+				}
+			}
+		});
+		
+	
+		$("#reset").on("input click", function() {
+			reset("");
+		});
+		
+		$("#changeImg").on("input click", function() {
+			var img = $("#img_src").val();
+			$(".image").css("background-image", "url('" + img + "')");
+		});
+		
+		
+		function reset(range){
+			for(var i=0; i<arr_range.length; i++){
+				if(range!=arr_range[i]){
+					$("#" + arr_range[i]).val(arr_values[i]);					
+					actValues(arr_range[i], arr_values[i]);
+
+					$("#" + arr_range[i]).prop("disabled", false);
+					$("#" + arr_range[i] + "Cbx").prop("checked", false);
+				}
+			}
+			$(".image").css("filter", "");
+		}
+	
+	
+		function calcFilters(){
+			var filters = "";
+
+			for(var i=0; i<arr_range.length; i++){
+				if($("#" + arr_range[i] + "Cbx").is(":checked")) {
+					var range = $("#" + arr_range[i]).attr("id");
+					var value = $("#" + range).val();
+					
+					if(range=="hue-rotate"){
+						var units="deg";
+					}else{
+						var units="%";
+					}
+					
+					filters = filters +  range + "(" + value + units +") ";
+				}
+			}
+			$(".image").css("filter", filters);
+		}
+		
+		function actValues(range, value){
+			if(range=="hue-rotate"){
+				var units="deg";
+			}else{
+				var units="%";
+			}
+			
+			$("#" + range + "_value").html(value + units);
+		}
+	});
+
+</script>
+	
+<style>
+	.image{
+		min-height: 100vh;
+		background-image:url('https://fd204d43461da5218393-0b3ca8ff9ad90f3780bc876f4d2d02ae.ssl.cf1.rackcdn.com/uploads/2018/07/AV_Landscape-Hero-Contour-2993-1276x800.jpg');
+		background-size:cover;
+		
+	}
+	
+	a{
+		width: 100px;
+		background-color:#679e95;
+		text-align: center;
+		border-radius: 5px;
+		padding: 5px 10px;
+		cursor: pointer;
+		color: #ffffff;
+		margin-top: 10px;
+		text-decoration:none;
+		display:block;
+	}
+	
+	a:hover{
+		background-color:#7185A5;
+		text-decoration:none;
+		color:#ffffff;
+	}
+	
+	.custom-range {
+		margin-bottom: 15px;
+	}
+	
+	label{
+		margin-bottom:0px;
+		margin-left:8px;
+	}
+	
+	.form-check-input{
+		position:relative;
+		top:2px;
+	}
+	
+	#img_src{
+		width:100%;
+		padding:1px 5px;
+	}
+	
+</style>
+
+<body>
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-3 p-0">
+				<div class="div_filters ml-5 mr-4 mt-4">
+					<input type="text" placeholder="Escriu la URL de la imatge" id="img_src"><a href="#" id="changeImg">Carregar</a><br>
+					
+					<hr/>
+					
+					<input class="form-check-input" type="checkbox" id="grayscaleCbx" value="option1"><label for="grayscale">Grayscale (0-100%) --> <span id="grayscale_value"> 0%</span></label>
+					<input type="range" class="custom-range" min="0" max="100" step="1" value="0" id="grayscale">
+					
+					<input class="form-check-input" type="checkbox" id="brightnessCbx" value="option1"><label for="brightness">Brightness (0-200%) --> <span id="brightness_value"> 100%</span></label>
+					<input type="range" class="custom-range" min="0" max="200" step="1" value="100" id="brightness">
+					
+					<input class="form-check-input" type="checkbox" id="contrastCbx" value="option1"><label for="contrast">Contrast (0-200%) --> <span id="contrast_value"> 100%</span></label>
+					<input type="range" class="custom-range" min="0" max="200" step="1" value="100" id="contrast">
+					
+					<input class="form-check-input" type="checkbox" id="hue-rotateCbx" value="option1"><label for="hue-rotate">Hue-rotate (0-360deg) --> <span id="hue-rotate_value"> 0deg</span></label>
+					<input type="range" class="custom-range" min="0" max="360" step="1"  value="0" id="hue-rotate">
+					
+					<input class="form-check-input" type="checkbox" id="invertCbx" value="option1"><label for="invert">Invert (0-100%) --> <span id="invert_value"> 0%</span></label>
+					<input type="range" class="custom-range" min="0" max="100" step="1"  value="0" id="invert">
+					
+					<input class="form-check-input" type="checkbox" id="opacityCbx" value="option1"><label for="opacity">Opacity (0-100%) --> <span id="opacity_value"> 100%</span></label>
+					<input type="range" class="custom-range" min="0" max="100" step="1"  value="100" id="opacity">
+					
+					<input class="form-check-input" type="checkbox" id="saturateCbx" value="option1"><label for="saturate">Saturate (0-300%) --> <span id="saturate_value"> 100%</span></label>
+					<input type="range" class="custom-range" min="0" max="300" step="1"  value="100" id="saturate">
+					
+					<input class="form-check-input" type="checkbox" id="sepiaCbx" value="option1"><label for="sepia">Sepia (0-100%) --> <span id="sepia_value"> 0%</span></label>
+					<input type="range" class="custom-range" min="0" max="100" step="1"  value="0" id="sepia">
+					
+					<a href="#" id="reset">Reset</a>
+				</div>
+			</div>
+		
+			<div class="col-9 p-0">
+				<div class="image"></div>
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+</html>

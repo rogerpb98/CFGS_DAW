@@ -1,0 +1,4 @@
+Gestor de puzles d'escacs. Escriviu help per ajuda.
+puzle> PRIMER_PUZLE
+SEGON_PUZLE
+puzle> adèu

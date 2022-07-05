@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ordenar(array, orden) {
+            //orden==true => ascendente
+            //orden==false => descendente
+            if (orden==true) {
+                return array.sort();
+            }
+            return array.sort().reverse();
+        }
+        function ordenarNumericamente(array, orden) {
+            //orden==true => ascendente
+            //orden==false => descendente
+            if (orden==true) {
+                return array.sort(function(a, b) {return a - b;});
+            }
+            return array.sort(function(a, b) {return a - b;}).reverse();
+        }
+        function filtrar(array, cadena) {
+            return array.filter(item => {
+                if (item[0].startsWith(cadena)) return true;
+            });
+        }
+        function buscar(array, cadena) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i][0]==cadena) {
+                    return i;
+                }
+            }
+            
+        }
+        function mostrarTabla(array) {
+            document.write("<table border='1px solid black'>");
+            for (let i = 0; i < array[0].length; i++) {
+                document.write("<tr>");
+                array.forEach(element => {
+                    document.write("<td>"+element[i]+"</td>");
+                });
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        }
+        function añadirMedia(){
+            for (let i = 0; i < activitats.length; i++) {
+                const activitat = activitats[i];
+                let media=Math.floor(activitat[1]*100/24);
+                activitats[i][2]=media;
+            }
+        }
+        function eliminarMedia(){
+            for (let i = 0; i < activitats.length; i++) {
+                activitats[i].pop();
+            }
+        }
+        let activitats = [
+            ['Treball', 8],
+            ['Menjar', 1],
+            ['Desplaçaments', 1],
+            ['Jugar', 1],
+            ['Dormir', 8]
+        ];
+        let item=["Estudiar JS",2];
+        activitats.push(item);
+        item=["Programar JS", 2];
+        activitats.splice(1, 0, item);
+        añadirMedia();
+        activitats.pop();
+        eliminarMedia();
+        console.table(activitats);
+
+        //console.table(activitats.sort());
+
+        console.table(ordenar(activitats, true));
+        console.table(ordenar(activitats, false));
+
+        console.table((filtrar(activitats, "D")));
+
+        console.log(buscar(activitats, "Menjar"));
+
+        mostrarTabla(activitats);
+
+        console.table(ordenarNumericamente(activitats, true));
+    </script>
+</body>
+</html>

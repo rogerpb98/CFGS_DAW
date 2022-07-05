@@ -1,0 +1,12 @@
+Text?
+Informe
+=======
+lletres en majúscules: 1 (25,00%)
+lletres en minúscules: 1 (25,00%)
+total lletres: 2 (50,00%)
+vocals en majúscules: 1 (25,00%)
+vocals en minúscules: 1 (25,00%)
+total vocals: 2 (50,00%)
+digits: 1 (25,00%)
+altres caràcters: 1 (25,00%)
+total caràcters: 4

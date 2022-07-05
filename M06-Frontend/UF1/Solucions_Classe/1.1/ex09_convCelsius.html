@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conv Celsius Farenheit</title>
+
+</head>
+<body>
+    <script>
+
+        /* Crear una aplicació que permeti realitzar la conversió entre temperatures de  ºC a ºF  i de ºF a ºC, 
+           d’acord amb la següent fórmula: 
+             ºF = (9.0/5.0)* (ºC)+32. 
+           El programa ha de demanar a l’usuari quina conversió ha de fer i la temperatura  a convertir. */
+
+        var conv = parseInt(prompt("Per convertir de Celsius a Farenheit escriu 1, per convertir de Farenheit a Celsius escriu 2", 1));
+        var degrees = parseInt(prompt("Escriu els graus", "100"));
+
+
+        if (conv == 1) {
+            var far = (9.0 / 5.0) * degrees + 32;
+            document.write("Graus Farenheit = " + far);
+
+        } else {
+            var cel = 5.0 * (degrees - 32) / 9.0;
+            document.write("Graus Celsius = " + cel);
+        }
+
+    </script>
+</body>
+</html>

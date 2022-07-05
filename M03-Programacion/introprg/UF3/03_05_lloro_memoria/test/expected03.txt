@@ -1,0 +1,12 @@
+El lloro pregunta paraula:
+El lloro registra: a
+El lloro pregunta paraula:
+El lloro registra: b
+El lloro pregunta paraula:
+El lloro registra: c
+El lloro pregunta paraula:
+D'acord
+El lloro recorda: a
+El lloro recorda: b
+El lloro recorda: c
+Adéu

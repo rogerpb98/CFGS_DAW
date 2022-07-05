@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+    <xs:complexType name="tipusAdress">
+            <xs:sequence>
+                <xs:element name="carrer" type="xs:string"/>
+                <xs:element name="nom" type="xs:string"/>
+                <xs:element name="ciutat" type="xs:string"/>
+                <xs:element name="província" type="xs:string"/>
+            </xs:sequence>
+    </xs:complexType>
+ 
+    <xs:element name="alumne">
+        <xs:complexType>
+            <xs:sequence>
+                    <xs:element name="nom" type="xs:string"/>
+                    <xs:element name="adress" type="tipusAdress"/>
+                    <xs:element name="tel" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="dni" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+ 
+    <xs:element name="alumnes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alumne" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,2 @@
+show UN_PUZLE
+quit

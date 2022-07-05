@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nippon manga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+</head>
+<body class="background-light-gray">
+    <header class="nm-header | background-white">
+        <a class="nm-header__link" href="index.html">
+            <img  class="nm-header__logo"src="../img/logo.png" alt="logo">
+        </a>
+    </header>
+    <nav class="nm-nav | background-dark-gray">
+        <form class="nm-nav__search" action="">
+            <button class="nm-nav__search-button" type="submit"><i class="fa fa-search"></i></button>
+            <input class="nm-nav__search-input" type="text" placeholder="Search..." name="search">
+        </form>
+        <div class="nm-nav__links">
+            <a class="nm-nav__link | font-white" href="index.html">NOVEDADES</a>
+            <hr class="nm-nav__separator" id='liniaVertical' />
+            <a class="nm-nav__link | font-white" href="categorias.html">CATEGORIAS</a>
+            <hr class="nm-nav__separator" id='liniaVertical' />
+            <a class="nm-nav__link | font-white" href="contacto.html">CONTACTO</a>
+            <hr class="nm-nav__separator" id='liniaVertical' />
+            <a class="nm-nav__link | font-white | nm-nav__carrito" href="cesta.html"><img src="../img/img/carro_bueno.png" alt="cesta" style="height: 26px;"></a>
+        </div>
+    </nav>
+    <main class="nm-main">
+        <div class="nm-main__container">
+            <h1>Cesta de Mangas</h1>
+            <section id="compra">
+                <div id="cesta">
+                    <div id="carrito">
+                        <article>
+                            <img class="img_style" src="../img/portadas/jujutsu_kaisen.png" alt="">
+                            <h3>Jujutsu kaisen</h3>
+                            <p>7,50€</p>
+                        </article>
+                        <hr class="liniaHorizontal">
+                        <article>
+                            <img class="img_style" src="../img/portadas/horimiya.png" alt="">
+                            <h3>Horimiya</h3>
+                            <p>7,50€</p>
+                        </article>
+                        <hr class="liniaHorizontal">
+                        <h2 class="precio_final">TOTAL: 15€</h2>
+                    </div>
+                    <hr id='liniaVertical_carrito' />
+                    <div class="formulario">
+                        <form>
+                            <h3>DIRECCION DE ENVIO</h3>
+                            <input class="input_form" type="text" placeholder="NOMBRE">
+                            <input class="input_form" type="text" placeholder="APELLIDOS">
+                            <input class="input_form" type="text" placeholder="MAIL" id="mail">
+                            <input class="input_form" type="text" placeholder="CIUDAD">
+                            <input class="input_form" type="text" placeholder="CALLE">
+                            <input class="input_form" type="text" placeholder="TELEFONO">
+                        </form>
+                        <section id="metodo-pago">
+                            <h3>MÉTODO DE PAGO</h3>
+                            <ul>
+                                <li>TARJETA DE CRÉDITO/DÉBITO</li>
+                                <li>PAYPAL</li>
+                            </ul>
+                            <button><a href="fin-compra.html">COMPRAR</a></button>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="nm-footer | background-dark-gray">
+        <p class="nm-footer__copyright | font-white" id="copyright">
+            @ 2021 Copyright Nippon Manga.<br>
+            Nippon Manga Comics - C.Aristides Maillol 107 <br>
+            08014 Barcelona. Spain - Tel 92 756 47 28
+        </p>
+        <div class="nm-footer__socials" id="social-media">
+            <a class="nm-footer__link" href="http://www.instagram.com">
+                <img class="nm-footer__logo" src="../img/rrss/instagram.png" alt="instagram logo">
+            </a>
+            <a class="nm-footer__link" href="http://www.twitter.com">
+                <img class="nm-footer__logo" src="../img/rrss/twitter.png" alt="twitter logo">
+            </a>
+            <a class="nm-footer__link" href="http://www.facebook.com">
+                <img class="nm-footer__logo" src="../img/rrss/facebook.png" alt="facebook logo">
+            </a>
+            <a class="nm-footer__link" href="http://www.tiktok.com">
+                <img class="nm-footer__logo" src="../img/rrss/tiktok.png" alt="tiktok logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

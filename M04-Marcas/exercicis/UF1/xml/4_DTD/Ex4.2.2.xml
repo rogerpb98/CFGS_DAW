@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda [
+<!ELEMENT agenda (contact*)>
+<!ELEMENT contact (name, landLine*, mobilePhone+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT landLine (#PCDATA)>
+<!ELEMENT mobilePhone (#PCDATA)>
+]>
+<agenda>
+    <contact>
+        <name>INS Joan d’Àustria</name>
+        <landLine>93 307 34 02</landLine>
+        <mobilePhone>Unknown</mobilePhone>
+    </contact>
+    <contact>
+        <name>Emergencies</name>
+        <landLine>112 (EU)</landLine>
+        <landLine>911 (US)</landLine>
+        <mobilePhone>Unknown</mobilePhone>
+    </contact>
+</agenda>

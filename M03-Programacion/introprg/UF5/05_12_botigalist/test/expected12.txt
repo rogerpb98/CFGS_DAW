@@ -1,0 +1,76 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+Referències llegides: 8
+botiga> ref> nom> tipus> preu max.> collita> estoc min.> D.O.> lloc> Trobat:
+	Ref: LLUMALBA20200001
+	Nom: Llum Alba Blanc
+	Tipus: blanc
+	Preu: 1750
+	Collita: 2020
+	Estoc: 12
+	D.O.: Priorat
+	Lloc: P02E03N55D
+
+	Ref: CARPATHI20180021
+	Nom: Carpathia Negre
+	Tipus: negre
+	Preu: 3450
+	Collita: 2018
+	Estoc: 6
+	D.O.: Montsant
+	Lloc: P23E01N43D
+
+	Ref: MATISNEG20190011
+	Nom: Matís Negre
+	Tipus: negre
+	Preu: 1325
+	Collita: 2019
+	Estoc: 12
+	D.O.: Pla del Bages
+	Lloc: P20E01N12E
+
+	Ref: SAOROSAT20180001
+	Nom: Saó Rosat
+	Tipus: rosat
+	Preu: 1040
+	Collita: 2018
+	Estoc: 24
+	D.O.: Costers del Segre
+	Lloc: P02E45N55D
+
+	Ref: ROURABLA20200232
+	Nom: Roura blanc
+	Tipus: blanc
+	Preu: 606
+	Collita: 2020
+	Estoc: 32
+	D.O.: Alella
+	Lloc: P21E45N55E
+
+ 	Ref: ROURABLA20200201
+ 	Nom: Roura blanc
+ 	Tipus: blanc
+ 	Preu: 906
+ 	Collita: 2018
+ 	Estoc: 3
+ 	D.O.: Alella
+ 	Lloc: P21E45N55E
+
+	Ref: CERCIUMX20170002
+	Nom: Cercium
+	Tipus: negre
+	Preu: 565
+	Collita: 2017
+	Estoc: 30
+	D.O.: Empordà
+	Lloc: P23E01N55D
+
+	Ref: MASIASER20200001
+	Nom: Masia Serra
+	Tipus: negre
+	Preu: 1350
+	Collita: 2020
+	Estoc: 12
+	D.O.: Empordà
+	Lloc: P02E02N55E
+botiga> Referències guardades: 8
+adéu

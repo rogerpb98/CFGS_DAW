@@ -1,0 +1,6 @@
+Valor inicial?
+Valor final?
+Salt?
+1
+2
+3

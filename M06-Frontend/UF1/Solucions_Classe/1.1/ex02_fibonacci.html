@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+<body>
+
+    <script>
+        /* Calcular els primers 20 números de la sèrie de Fibonacci,
+           tenint present que a1=1, a2=1 y que an=an-1+an-2.
+        */
+
+        var nbr = parseInt(prompt("Number: ", 20));
+        var an1 = 1;
+        var an2 = 1;
+
+        document.write("i = 1, an = " + an1 + "<br>");
+        document.write("i = 2, an = " + an2 + "<br>");
+
+        for (var i = 3; i <= nbr; i++) {
+            var an = an1 + an2;
+            document.write("i = " + i + ", an = " + an + "<br>");
+            an2 = an1;
+            an1 = an;
+        }
+
+    </script>
+
+</body>
+</html>

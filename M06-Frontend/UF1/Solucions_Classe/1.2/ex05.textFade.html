@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text = prompt("Introdueix un text: ", "Text de prova");
+
+        document.write("Text en majuscules: " + text.toUpperCase());
+        document.write("<br>Text en minuscules: " + text.toLowerCase());
+        document.write("<br>Longitud del text: " + text.length);
+        document.write("<br>Nombre de paraules: " + text.split(" ").length);
+        document.write("<br>Nombre de vocals: " + text.match(/[aeiouàèéíòóúïü]/gi).length);
+
+        for (let i = 0; i < text.length; i++) {
+            document.write("<br>" + text.substring(i, text.length));
+        }
+
+    </script>
+</body>
+</html>

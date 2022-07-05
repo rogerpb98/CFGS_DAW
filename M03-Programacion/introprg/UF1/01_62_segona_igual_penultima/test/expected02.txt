@@ -1,0 +1,5 @@
+Ves introduïnt texts (finalitza amb enter sol)
+Segona igual a penúltima
+Segona igual a penúltima
+Segona diferent de penúltima
+Adéu

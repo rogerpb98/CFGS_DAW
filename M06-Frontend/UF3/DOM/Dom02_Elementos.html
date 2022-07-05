@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.onload = main;
+
+        function main(){
+            document.getElementById("crearParrafo").addEventListener("click", crearParrafo);
+            document.getElementById("crearImagen").addEventListener("click", crearImagen);
+            document.getElementById("borrarUltimo").addEventListener("click", borrarUltimo);
+            document.getElementById("borrarPrimero").addEventListener("click", borrarPrimero);
+            document.getElementById("sustituirPrimeroVacio").addEventListener("click", sustituirPrimeroVacio);
+        }
+
+        function crearParrafo(){
+            let parrafo = document.createElement("p");
+
+            let texto = document.getElementById("texto").value;
+            let textNode = document.createTextNode(texto);
+            parrafo.appendChild(textNode);
+
+            let div1 = document.getElementById("div1");
+            div1.appendChild(parrafo);
+        }
+
+        function crearImagen (){
+
+            let imagen = document.createElement("img");
+            imagen.setAttribute("src", prompt("Introduce ruta imagen: "));
+            imagen.setAttribute("alt", prompt("Introduce teto alternativo: "));
+
+            let div1 = document.getElementById("div1");
+            div1.appendChild(imagen);
+
+        }
+
+        function borrarUltimo(){
+
+            let div1 = document.getElementById("div1");
+            div1.removeChild(div1.lastChild);
+
+        }
+
+        function borrarPrimero(){
+
+            let div1 = document.getElementById("div1");
+            div1.removeChild(div1.firstChild);
+
+        }
+
+        function sustituirPrimeroVacio(){
+            let parrafo = document.createElement("p").appendChild(document.createTextNode("Vacio"));
+            let div1 = document.getElementById("div1");
+            div1.replaceChild(parrafo,div1.firstChild);
+
+        }
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+    <br/>
+    <textarea id="texto"></textarea>
+    <br/>
+    <button id="crearParrafo">Crear parrafo</button>
+    <button id="crearImagen">Crear imagen</button>
+    <button id="borrarUltimo">Borrar ultimo</button>
+    <button id="borrarPrimero">Borrar primero</button>
+    <button id="sustituirPrimeroVacio">Sustituir primer párrafo por vacío</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cinema>
+    <Casting>
+        <ord>4</ord>
+        <Movie id="10003">
+            <title>"Crocodile" Dundee II</title>
+            <yr>1988</yr>
+            <director>38</director>
+            <budget>15800000</budget>
+            <gross>239606210</gross>
+        </Movie>
+        <Actor id="20">
+            <name>Paul Hogan</name>
+        </Actor>
+    </Casting>
+    <Casting>
+        <ord>1</ord>
+        <Movie id="10004">
+            <title>'Til There Was You</title>
+            <yr>1997</yr>
+            <director>49</director>
+            <budget>10000000</budget>
+            <gross />
+        </Movie>
+        <Actor id="50">
+            <name>Jeanne Tripplehorn</name>
+        </Actor>
+    </Casting>
+</Cinema>

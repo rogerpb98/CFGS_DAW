@@ -1,0 +1,46 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="mypets">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="pet" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="dog">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name" type="xs:string"/>
+                                    <xs:element name="born" type="xs:date"/>
+                                    <xs:element name="breed" type="xs:string"/>
+                                </xs:sequence>
+                                <xs:attribute name="lang" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="bear">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name" type="xs:string"/>
+                                    <xs:element name="born" type="xs:date"/>
+                                    <xs:element name="breed" type="xs:string"/>
+                                </xs:sequence>
+                                <xs:attribute name="lang" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element> 
+                        <xs:element name="cat">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name" type="xs:string"/>
+                                    <xs:element name="born" type="xs:date"/>
+                                    
+                                </xs:sequence>
+                            <xs:attribute name="lang" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

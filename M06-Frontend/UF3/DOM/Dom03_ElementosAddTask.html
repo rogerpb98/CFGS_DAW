@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+  
+    <script>
+
+        window.addEventListener("load", main);
+
+        const tasks = ['Anar a comprar', 'Preparar el sopar', 'Reportar hores al sBid'];
+        var todoList;
+
+        function main() {
+
+			todoList = document.getElementById("todo_list");
+
+            tasks.forEach( task => {
+                addTask(todoList, task);
+            })
+
+            document.getElementById('taskButton').addEventListener('click', onClick);
+        }
+
+        function onClick() {
+            taskText = document.getElementById("taskText").value;
+            if (taskText) {
+                addTask(todoList, taskText);
+            } else {
+                alert('Has de introduir un valor')
+            }
+        }
+
+        function addTask(todoList, taskText) {
+            var itemLi = document.createElement("li");
+			itemLi.appendChild(document.createTextNode(taskText));
+            //itemLi.innerText = taskText;
+            todoList.appendChild(itemLi);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <input type="text" name="task" id="taskText">
+    <input type="button" value="Crea tasca" id="taskButton">
+    <ul id="todo_list">
+    </ul>
+
+</body>
+
+</html>

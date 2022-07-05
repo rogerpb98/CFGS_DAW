@@ -1,0 +1,3 @@
+Introdueix una nota
+Introdueix una nota
+La mitja de les notes vàlides és 0

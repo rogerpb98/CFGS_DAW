@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+        numero = Math.ceil(Math.random()*100);
+        contador = 0;
+        do {
+            input = parseInt(prompt("Introdueix un numero: "));
+            contador++;
+            console.log((numero>input)?"mas alto":"mas bajo");
+        } while (numero!=input && input!=0);
+        if (input==0) {
+            document.write("<p>Game Over</p>");
+        }
+        else {
+            document.write("<p>felicitats, ho has endevinat!</p>");
+            document.write("<p>numero d'intents: "+contador+"</p>");
+        }
+	</script>
+</body>
+</html>

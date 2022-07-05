@@ -1,0 +1,8 @@
+# Ignora la carpeta vendor
+vendor
+
+# Ignora la carpeta ignore
+server/ignore
+
+# Ignora composer.lock
+*.lock

@@ -1,0 +1,9 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+Referències llegides: 2
+botiga> nom (enter cancel·la)> preu (en cèntims)> estoc (enter sense estoc)> Introduït:
+	Vi: Almodi Petit Blanc
+	Preu: 570
+	Estoc: 32
+
+botiga> Referències guardades: 3
+adéu

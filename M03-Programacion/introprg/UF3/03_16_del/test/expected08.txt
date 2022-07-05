@@ -1,0 +1,3 @@
+Gestor de puzles d'escacs. Escriviu help per ajuda.
+puzle> ERROR: no es pot eliminar
+puzle> adèu

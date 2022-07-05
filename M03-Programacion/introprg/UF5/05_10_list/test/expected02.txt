@@ -1,0 +1,11 @@
+Obtenim les entrades
+====================
+Cerquem elements de la llista
+=============================
+El text jota és troba a la llista: true
+Posició de jota a la llista: 0
+Mostrem les entrades introduïdes
+================================
+jota
+ka
+i

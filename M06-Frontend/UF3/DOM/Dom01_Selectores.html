@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .miClase{
+            color: red;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("load", main);
+
+        function main(){
+            document.getElementById("cambiarTextos").addEventListener("click", cambiarTextos);
+            document.getElementById("cambiarClases").addEventListener("click", cambiarClases);
+            document.getElementById("quitarClases").addEventListener("click", quitarClases);
+        }
+
+        function cambiarTextos(){
+            document.getElementById("parrafo1").innerHTML = "Primer parrafo cambiado";
+            let parrafos = document.getElementsByTagName("p");
+            for(let i=0; i < parrafos.length; i++){
+                parrafos[i].innerHTML = "Parrafo cambiado tag";
+            }
+            document.getElementsByClassName("miClase")[0].innerHTML = "Tercer parrafo cambiado";
+        }
+
+        function cambiarClases(){
+            document.getElementById("parrafo1").setAttribute("class","miClase");
+            document.getElementById("parrafo2").className = "miClase";
+        }
+
+        function quitarClases(){
+
+            let parrafos = document.getElementsByTagName("p");
+            for(let i=0; i < parrafos.length; i++){
+                parrafos[i].className = "";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p id="parrafo1">Este es el primer parrafo</p>
+        <p id="parrafo2">Este es el segundo parrafo</p>
+        <p id="parrafo3" class="miClase">Este es el tercer parrafo</p>
+    </div>
+    <button id="cambiarTextos">Cambiar texto parrafos</button>
+    <button id="cambiarClases">Cambiar clases parrafos</button>
+    <button id="quitarClases">Quitar clases parrafos</button>
+
+</body>
+</html>

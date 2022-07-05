@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lleis [
+<!ELEMENT lleis (titol, murphy, ginsberg, confuci, altres)>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT murphy (tipus, llei+)>
+<!ELEMENT ginsberg (tipus, llei+)>
+<!ELEMENT confuci (tipus, llei+)>
+<!ELEMENT altres (tipus, llei+)>
+
+<!ELEMENT tipus (#PCDATA)>
+<!ELEMENT llei (#PCDATA)>
+
+<!ATTLIST murphy id CDATA #REQUIRED>
+<!ATTLIST ginsberg id CDATA #REQUIRED>
+<!ATTLIST confuci id CDATA #REQUIRED>
+<!ATTLIST altres id CDATA #REQUIRED>
+<!ATTLIST llei id CDATA #REQUIRED>]>
+<lleis>
+    <titol> Humor </titol>
+    <murphy id="1">
+        <tipus> Lleis de Murphy </tipus>
+        <llei id="1.1"> Si alguna cosa pot fallar, fallarà.</llei>
+        <llei id="1.2"> Si alguna cosa no pot fallar, ho farà malgrat tot.</llei>
+        <llei id="1.3"> Si alguna cosa sembla que va bé, és obvi que s'ha passat alguna cosa
+        per alt.</llei>
+    </murphy>
+    <ginsgberg id="2">
+        <tipus> Teoremes de Ginsgberg </tipus>
+        <llei id="2.1"> No pots guanyar.</llei>
+        <llei id="2.2"> No pots desempatar.</llei>
+        <llei id="2.3"> I tampoc pots abandonar el joc.</llei>
+    </ginsgberg>
+    <confuci id="3">
+        <tipus> Frases de Confuci </tipus>
+        <llei id="3.1"> Escolte i oblide. Veig i recorde. Faig i aprenc.</llei>
+        <llei id="3.2"> Fes tot amb moderació, fins i tot moderar-te.</llei>
+        <llei id="3.3"> Siguen el canvi que vols veure al món.</llei>
+    </confuci>
+    <altres id="4">
+        <tipus>Altres</tipus>
+        <llei id="4.1"> És igual per on obris la caixa d'un medicament. Sempre et molestarà
+        el prospecte.</llei>
+        <llei id="4.2"> Arribaràs al telèfon just a temps per sentir com pengen.</llei>
+        <llei id="4.3"> Mai et caldrà res a guardis per si ho necessites.</llei>
+        <llei id="4.4"> Els problemes neixen, creixen, es multipliquen i romanen.</llei>
+    </altres>
+</lleis>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+        function checkearFechas(){
+            for (let i = numero1; i <= numero2; i++) {
+                datacosa="01/01/"+i;
+                data=new Date(datacosa);
+                if(data.getDay()==4) {
+                    return "el dia "+data.getDate()+" del mes "+data.getMonth()+" del "+data.getFullYear()+" va ser dimecres";
+                }
+            }
+            return "no n'hi ha cap";
+        }
+        numero1=prompt("Introduce numero1: ");
+        numero2=prompt("Introduce numero2: ");
+		console.log(checkearFechas());
+        
+        
+	</script>
+</body>
+</html>

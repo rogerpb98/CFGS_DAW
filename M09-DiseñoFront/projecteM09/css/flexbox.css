@@ -1,0 +1,226 @@
+:root {
+  --bgBody: #495057;
+  --bgHeader: #252422;
+  --bgNav: #1c2541;
+  --bgNavHover: #3a506b;
+  --bgAside: #e67e22;
+  --bgFooter: #252422;
+  --blanc: 255, 255, 255;
+  --bgMain: #212529;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(var(--blanc));
+}
+html,
+body,
+.contenedor {
+  height: 100%;
+}
+body {
+  background: var(--bgBody);
+}
+
+.contenedor {
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  height: 7.5%;
+  background-color: var(--bgHeader);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(var(--blanc), 0.4);
+}
+/*estils de la part del logo al header*/
+header div {
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 40px;
+}
+/*estils de la barra de navegació*/
+header nav {
+  background-color: var(--bgNav);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  border: 1px double rgb(var(--blanc));
+}
+header nav a {
+  color: var(--blanc);
+  text-decoration: none;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+header nav a:hover {
+  background-color: var(--bgNavHover);
+}
+/***********************************/
+footer {
+  width: 100%;
+  height: 7.5%;
+  background-color: var(--bgFooter);
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid rgba(var(--blanc), 0.4);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social > a {
+  color: var(--blanc);
+  text-decoration: none;
+}
+/*Estils per als main*/
+main {
+  width: 70%;
+  height: 85%;
+  background-color: var(--bgMain);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-left: 6px inset rgba(var(--blanc), 0.8);
+  border-right: 6px outset rgba(var(--blanc), 0.8);
+}
+main > * {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.titulo {
+  text-align: center;
+  padding: 5px;
+}
+/* Estils especifics per Index*/
+.about-main {
+  display: flex;
+}
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+/* Estils especifics per About*/
+#about-main > article:nth-last-child(n + 2) {
+  border-bottom: solid 1px;
+}
+#about-main > * {
+  /*fer que els 3 espais de texte ocupin el mateix*/
+  flex-grow: 1;
+}
+#about-main > .caixes {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  align-items: center;
+}
+#about-main > .caixes > a {
+  text-decoration: none;
+  background-color: var(--bgFooter);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  height: 80%;
+  border: 1px solid rgb(var(--blanc));
+  width: 25%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#about-main > .caixes > a:hover {
+  background-color: var(--bgBody);
+}
+#about-main > .caixes > a > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* Estils especifics per Galería*/
+#galeria-main > article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  align-items: center;
+}
+#galeria-main > article > a {
+  width: 25%;
+}
+#galeria-main > article > a > img {
+  width: 100%;
+  border: 6px ridge rgba(var(--blanc), 0.3);
+}
+/*Tornar la imatge mes fosca al pasar el ratoli per sobre*/
+#galeria-main > article > a > img:hover {
+  filter: brightness(40%);
+  transition: filter 0.15s;
+}
+/* Estils especifics per Contacto*/
+form {
+  position: relative;
+  margin: auto;
+  width: 60%;
+  height: 75%;
+  border-radius:7.5px;
+  background: rgba(var(--blanc), 0.05);
+  }
+  .form-inner {
+  padding: 40px;
+  }
+  .form-inner input,
+  .form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(var(--blanc), 0.8);
+  }
+  .form-inner h1 {
+    padding-bottom: 5px;
+  }
+  .form-inner textarea {
+  resize: none;
+  }
+  .form-inner button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid var(--bgNavHover);
+    background: var(--bgNav); 
+    font-size: 16px;
+
+    color: #fff;
+    }
+  .form-inner button:hover {
+    background: var(--bgNavHover);
+    } 

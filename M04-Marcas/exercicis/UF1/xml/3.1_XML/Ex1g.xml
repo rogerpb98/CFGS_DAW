@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mitjansDeTransport>
+    <bicicleta> 
+        <velocitat-maxima>
+        <![CDATA[v<100km/h]]>
+        </velocitat-maxima>
+    </bicicleta>
+    <patinet>
+        <velocitat-maxima>50 km/h</velocitat-maxima>
+    </patinet>
+</mitjansDeTransport>

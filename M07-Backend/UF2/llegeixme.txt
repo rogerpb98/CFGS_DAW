@@ -1,0 +1,5 @@
+La carpeta botiga té el que demana a la part 1, fet amb msqli.
+La carpera botigaPDO té la part 2 i tot el de la part 1 refet amb PDO
+No he tingut temps de mirar com guardar les imatges al servidor, aixi que només funcionen els productes generats amb l'script sql perque utlitzen imatges hostejades a internet, si insereixes un producte amb imatges no es mostraràn, ja que guarda la ruta pero no guarda la imatge.
+Update no funciona perque no he pensat en alguna forma per no haber de fer una consulta per cada camp a modificar.
+No verifica que l'usuari que esborra un producte sigui el dueño

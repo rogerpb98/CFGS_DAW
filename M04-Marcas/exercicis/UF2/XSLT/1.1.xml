@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="1.1.css" type="text/css"?>
+<animals>
+   <animal>
+      <nom>Gos</nom>
+      <pates>4</pates>
+   </animal>
+   <animal>
+      <nom>Canari</nom>
+      <pates>2</pates>
+   </animal>
+   <animal>
+      <nom>Balena</nom>
+      <pates>0</pates>
+    </animal>
+</animals>

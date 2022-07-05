@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<universitat>
+    <nom>Universitat de Barcelona</nom>
+    <ciutat>Barcelona</ciutat>
+    
+    <!-- CARRERES --> 
+    <carreres>
+        <carrera id="c01">
+            <nom>I.T. Informàtica</nom>
+            <plan>2012</plan>
+            <credits>250</credits>
+            <centre>Escola d'Informàtica</centre>
+        </carrera>
+        <carrera id="c02">
+            <nom>Grau Empresarials</nom>
+            <plan>2010</plan>
+            <credits>275</credits>
+            <centre>Facultat de Ciències Socials</centre>
+        </carrera>
+        <carrera id="c03">
+            <nom>Grau en Relacions Laborals</nom>
+            <plan>2012</plan>
+            <credits>280</credits>
+            <centre>Facultat de Ciències Socials</centre>
+            <subdirector>Alfonso Martín  Luque</subdirector>
+        </carrera>
+        <carrera id="c04">
+            <nom>Grau Química</nom>
+            <plan>2011</plan>
+            <credits>175</credits>
+            <centre>Facultat de Ciències Experimentals</centre>
+        </carrera>
+        <carrera id="c05">
+            <nom>Grau en Biologia</nom>
+            <plan>2013</plan>
+            <credits>175</credits>
+            <centre>Facultat de Ciències Experimentals</centre>
+        </carrera>
+        <carrera id="c06">
+            <nom>Grau en Humanitats</nom>
+            <plan>1980</plan>
+            <credits>475</credits>
+            <centre>Facultat d'Humanitats</centre>
+        </carrera>
+    </carreres>
+    
+    <!-- ASSIGNATURES --> 
+    <assinatures>
+        <assignatura id="a01" titulacio="c01">
+            <nom>Ofimàtica</nom>
+            <credits_teorics>3</credits_teorics>
+            <credits_practics>1.5</credits_practics>
+            <trimestre>1</trimestre>
+        </assignatura>
+        <assignatura id="a02" titulacio="c01">
+            <nom>Enginyeria del Software</nom>
+            <credits_teorics>6</credits_teorics>
+            <credits_practics>1.5</credits_practics>
+            <trimestre>2</trimestre>
+        </assignatura>
+        <assignatura id="a03" titulacio="c02">
+            <nom>Administració d'Empreses</nom>
+            <credits_teorics>4</credits_teorics>
+            <credits_practics>1.5</credits_practics>
+            <trimestre>1</trimestre>
+        </assignatura>
+        <assignatura id="a04" titulacio="c02">
+            <nom>Dret Internacional</nom>
+            <credits_teorics>4</credits_teorics>
+            <credits_practics>5</credits_practics>
+            <trimestre>1</trimestre>
+        </assignatura>
+        <assignatura id="a05" titulacio="c04">
+            <nom>Pedagogia</nom>
+            <credits_teorics>4</credits_teorics>
+            <credits_practics>1.5</credits_practics>
+            <trimestre>2</trimestre>
+        </assignatura>
+        <assignatura id="a06" titulacio="c03">
+            <nom>Didàctica</nom>
+            <credits_teorics>4</credits_teorics>
+            <credits_practics>3</credits_practics>
+            <trimestre>2</trimestre>
+        </assignatura>
+        <assignatura id="a07" titulacio="c04">
+            <nom>Tecnologia dels Alimentes</nom>
+            <credits_teorics>1.5</credits_teorics>
+            <credits_practics>7.5</credits_practics>
+            <trimestre>2</trimestre>
+        </assignatura>
+        <assignatura id="a08" titulacio="c01">
+            <nom>Bases de Dades</nom>
+            <credits_teorics>4.5</credits_teorics>
+            <credits_practics>5.5</credits_practics>
+            <trimestre>1</trimestre>
+        </assignatura>
+        
+        <assignatura id="a09" titulacio="c06">
+            <nom>Historia del Pensament</nom>
+            <credits_teorics>6</credits_teorics>
+            <credits_practics>0</credits_practics>
+            <trimestre>2</trimestre>
+        </assignatura>
+    </assinatures>
+    
+    <!-- ALUMNES --> 
+    <alumnes>
+        <alumne id="e01">
+            <cognom1>Rivas</cognom1>
+            <cognom2>Santos</cognom2>
+            <nom>Víctor Manuel</nom>
+            <genere>Home</genere>
+            <estudis>
+                <carrera codi="c01"/>
+                <assinatures>
+                    <assignatura codi="a01"/>
+                    <assignatura codi="a03"/>
+                    <assignatura codi="a05"/>
+                    <assignatura codi="a09"/>
+                </assinatures>
+            </estudis>
+        </alumne>
+        <alumne id="e02">
+            <cognom1>Pérez</cognom1>
+            <cognom2>García</cognom2>
+            <nom>Luisa</nom>
+            <genere>Dona</genere>
+            <estudis>
+                <carrera codi="c02"/>
+                <assinatures>
+                    <assignatura codi="a02"/>
+                    <assignatura codi="a01"/>
+                </assinatures>
+                <projecte>Web de IBM.com</projecte>
+            </estudis>
+        </alumne>
+        <alumne id="e03" beca="si">
+            <cognom1>Pérez</cognom1>
+            <cognom2>Romero</cognom2>
+            <nom>Fernando</nom>
+            <genere>Home</genere> 
+            <estudis>
+                <carrera codi="c02"/>
+                <assinatures>
+                    <assignatura codi="a02"/>
+                    <assignatura codi="a01"/>
+                    <assignatura codi="a04"/>
+                    <assignatura codi="a09"/>
+                </assinatures>
+            </estudis>
+        </alumne>
+        
+        <alumne id="e04">
+            <cognom1>Avalón</cognom1>
+            <cognom2>Jiménez</cognom2>
+            <nom>María</nom>
+            <genere>Dona</genere>
+            <estudis>
+                <carrera codi="c01"/>
+                <assinatures>
+                    <assignatura codi="a02"/>
+                    <assignatura codi="a01"/>
+                    <assignatura codi="a07"/>
+                </assinatures>
+                <projecte>Estudi de Salinitat del Riu Ebre</projecte>
+            </estudis>
+        </alumne>
+    </alumnes>
+</universitat>

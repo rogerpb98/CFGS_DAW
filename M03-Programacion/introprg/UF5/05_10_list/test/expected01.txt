@@ -1,0 +1,11 @@
+Obtenim les entrades
+====================
+Cerquem elements de la llista
+=============================
+El text a és troba a la llista: true
+Posició de a a la llista: 2
+Mostrem les entrades introduïdes
+================================
+be
+ce
+a

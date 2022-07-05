@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<computer price="670"> 
+    <hardware>
+        <mother-board>
+        <name>ASUS BlaBla</name>
+            <chipset-model>
+                <name>AM4</name>
+            </chipset-model>
+            <ram-slots number="4">
+                <name>Corsair Vengeance</name>
+            </ram-slots>
+            <integrated-components>
+                <video-card size="8GB">
+                    <name>NVidia RTX 3060</name>
+                </video-card>
+                <wifi-card>
+                    <name>Generic WiFi Adapter</name>
+                </wifi-card>
+                <sound-card>
+                    <name>Generic Sound Adapter</name>
+                </sound-card>
+            </integrated-components>
+        </mother-board>
+        <key-board>
+            <name>Corsair Strafe RGB Cherry Brown</name>
+        </key-board>
+        <screen resolution="1080">
+            <name>Asus abskafs23</name>
+        </screen>
+    </hardware>
+    <software>
+        <operative-system installed="yes" free="no">
+            <security-pack>
+                <name>Service Pack 22</name>
+            </security-pack>
+            <name>Windows</name>
+        </operative-system>
+        <office-pack installed="yes">
+            <name>Star Office</name>
+        </office-pack>
+        <browser>
+            <name>Opera</name>
+        </browser>
+    </software>
+</computer>

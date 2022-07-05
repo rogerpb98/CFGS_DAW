@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Document Object Model</title>
+    <script>
+        window.addEventListener("load", main);
+
+        function cosa() {
+            comunidad = this.innerText;
+            lis = this.nextElementSibling.children
+            ciudades=[];
+            for (let i = 0; i < lis.length; i++) {
+                const element = lis[i].innerText;
+                ciudades.push(element);
+            }
+            ciudadeslen = this.nextElementSibling.children.length;
+            lugar = this.parentNode.id;
+            salida = `Has clicado en ${comunidad}, situada al ${lugar}, que tiene ${ciudadeslen} ciudades.
+            ${ciudades}`;
+            texto.innerText=salida
+        }
+        function main () {
+            elements = document.getElementsByTagName("h2");
+            console.log(elements);
+            len = elements.length;
+            for (let i = 0; i < len; i++) {
+                elements[i].addEventListener("click", cosa);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="norte">
+        <h2>Galicia</h2>
+        <ul>
+            <li>A Coruña</li>
+            <li>Lugo</li>
+            <li>Ourense</li>
+            <li>Pontevedra</li>
+        </ul>
+    </div>
+    <div id="sur">
+        <h2>Canarias</h2>
+        <ul>
+            <li>Santa Cruz de Tenerife</li>
+            <li>Las Palmas</li>
+        </ul>
+    </div>
+    <div id="texto"></div>
+</body>
+
+</html>

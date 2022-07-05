@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		var days=prompt("Introduce el primer numero:");
+		var months=0;
+		var years=0;
+
+		months=days/30;
+		days=days%30;
+		years=months/12;
+		months=months%12;
+		document.write("<p>days:"+Math.floor(days)+", months:"+Math.floor(months)+", years:"+Math.floor(years)+"</p>");
+	</script>
+</body>
+</html>

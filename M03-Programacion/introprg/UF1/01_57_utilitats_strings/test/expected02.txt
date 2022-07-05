@@ -1,0 +1,15 @@
+Text principal?
+Text secundari ?
+Número positiu?
+"I have an apple".length(): 15
+"I have an apple".startsWith("apple"): false
+"I have an apple".endsWith("apple"): true
+"I have an apple".equals("apple"): false
+"I have an apple".equalsIgnoreCase("apple"): false
+"I have an apple".isBlank(): false
+"I have an apple".isEmpty(): false
+"I have an apple".charAt(4): v
+"I have an apple".concat("apple"): I have an appleapple
+"I have an apple".repeat(4): I have an appleI have an appleI have an appleI have an apple
+"I have an apple".toUpperCase(): I HAVE AN APPLE
+"I have an apple".toLowerCase(): i have an apple

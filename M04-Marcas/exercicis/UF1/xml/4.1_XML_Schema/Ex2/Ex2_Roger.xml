@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="RUTA_I_NOM_FITXER_XSD">
+    <vehicle mat="9032XML">
+        <nom>Hennessey Venom</nom>
+        <model>GT 2016</model>
+        <fabricacio>
+            <inici>
+                <dia>21</dia>
+                <mes>Juliol</mes>
+                <any>2011</any>
+            </inici>
+            <fi>
+                <dia>9</dia>
+                <mes>Agost</mes>
+                <any>2014</any>
+            </fi>
+        </fabricacio>
+        <modificacions>
+            <modificacio>Canvi de motor</modificacio>
+            <modificacio>Frens de disc ventilats</modificacio>
+            <modificacio>Canvi de caixa de canvis</modificacio>
+        </modificacions>
+    </vehicle>
+</vehicles>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE programes [
+<!ELEMENT programes (programa+)>
+<!ELEMENT programa EMPTY>
+<!ATTLIST programa nom CDATA #REQUIRED>
+<!ATTLIST programa llicencia CDATA #REQUIRED>]>
+<programes>
+    <programa nom="Firefox" llicencia="GPL MPL"/>
+    <programa nom="LibreOffice" llicencia="LGPL"/>
+    <programa nom="Inkscape" llicencia="GPL"/>
+</programes>

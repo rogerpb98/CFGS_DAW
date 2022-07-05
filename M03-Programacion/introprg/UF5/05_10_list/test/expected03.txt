@@ -1,0 +1,11 @@
+Obtenim les entrades
+====================
+Cerquem elements de la llista
+=============================
+El text quatre és troba a la llista: false
+Posició de quatre a la llista: -1
+Mostrem les entrades introduïdes
+================================
+dos
+tres
+un

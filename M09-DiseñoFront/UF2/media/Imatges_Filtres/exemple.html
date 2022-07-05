@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<style>
+body{
+	margin:0px;
+}
+.quadrant{
+	height:100vh;
+	width: calc(100% / 6); /*quadrant es 1/6 de la pagina*/
+	background-image:url('https://preview.redd.it/7xst50esziq51.png?width=1920&format=png&auto=webp&s=691e741d0199d5e18fb929bb4559c31c664130b0');
+	background-attachment:fixed;
+	float:left;
+	background-size:cover;
+	background-position:center;
+	
+}
+
+.q_1:hover{
+	filter:hue-rotate(180deg); /*rota la paleta de colors de l'imatge*/
+}
+.q_2:hover{
+	filter:grayscale(70%); /*Afegeix un filtre blanc i negre*/
+}
+.q_3:hover{
+	filter:blur(5px); /*Torna l'imatge borrosa*/
+}
+.q_4:hover{
+	filter:invert(100%); /*inverteix els colors de l'imatge*/
+}
+.q_5:hover{
+	filter:sepia(100%); /*Afegeix un filtre sepia (groguenc a lo 80)*/
+}
+.q_6:hover{
+	filter:contrast(75%); /*Augmenta el contrast de l'imatge*/
+}
+</style>
+
+<body>
+	<div class="content">
+		<div class="q_1 quadrant"></div>
+		<div class="q_2 quadrant"></div>
+		<div class="q_3 quadrant"></div>
+		<div class="q_4 quadrant"></div>
+		<div class="q_5 quadrant"></div>
+		<div class="q_6 quadrant"></div>
+	</div>
+	
+</body>
+</html>

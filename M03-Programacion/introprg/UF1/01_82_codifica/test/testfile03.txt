@@ -1,0 +1,1 @@
+Cada lletra que trobem a un string té un codi, un nombre positiu.

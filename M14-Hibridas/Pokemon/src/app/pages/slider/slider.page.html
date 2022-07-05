@@ -1,0 +1,9 @@
+<ion-content color="tertiary">
+  <img id='logo' src="../../../assets/slider/Logo.png" />
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let imagen of imagenes;let i=index;">
+        <img src="../../../assets/slider/{{imagen}}" />
+        <ion-button *ngIf="i==2" id="home-link" href="/home">HOME <b>></b></ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

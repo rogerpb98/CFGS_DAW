@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function añadirMedia(){
+            for (let i = 0; i < activitats.length; i++) {
+                const activitat = activitats[i];
+                let media=Math.floor(activitat[1]*100/24);
+                activitats[i][2]=media;
+            }
+        }
+        function eliminarMedia(){
+            for (let i = 0; i < activitats.length; i++) {
+                activitats[i].pop();
+            }
+        }
+        let activitats = [
+            ['Treball', 8],
+            ['Menjar', 1],
+            ['Desplaçaments', 1],
+            ['Jugar', 1],
+            ['Dormir', 8]
+        ];
+        console.table(activitats);
+        console.log(activitats[0][1]);
+        console.log(activitats[3][0]);
+        let item=["Estudiar JS",2];
+        activitats.push(item);
+        console.table(activitats);
+        item=["Programar JS", 2];
+        activitats.splice(1, 0, item);
+        console.table(activitats);
+        añadirMedia();
+        console.table(activitats);
+        activitats.pop();
+        console.table(activitats);
+        eliminarMedia();
+        console.table(activitats);
+    </script>
+</body>
+</html>

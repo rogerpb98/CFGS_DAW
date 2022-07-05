@@ -1,0 +1,11 @@
+Caràcter?
+Character.getName('a'): LATIN SMALL LETTER A
+Character.isDigit('a'): false
+Character.isJavaIdentifierStart('a'): true
+Character.isJavaIdentifierPart('a'): true
+Character.isLetter('a'): true
+Character.isLowerCase('a'): true
+Character.isUpperCase('a'): false
+Character.isWhitespace('a'): false
+Character.toLowerCase('a'): a
+Character.toUpperCase('a'): A

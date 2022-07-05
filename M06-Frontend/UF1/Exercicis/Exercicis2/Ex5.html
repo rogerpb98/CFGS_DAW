@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		var texte=prompt("cosa texto:");
+		console.log("majuscules: "+texte.toUpperCase());
+		console.log("minuscules: "+texte.toLowerCase());
+		console.log("longitud: "+texte.length);
+		console.log("conté "+texte.split(" ").length+" paraules");
+		console.log("conté "+nombreVocals(texte.toLowerCase())+" vocals");
+		arrayTexte=texte.split("");
+		for (let i = 0; i < arrayTexte.length; i++) {
+			console.log(texte.substring(i));
+		}
+		function nombreVocals(frase) {
+			contador=0;
+			for (let i = 0; i < frase.length; i++) {
+				if (frase[i]=="a" || frase[i]=="e" || frase[i]=="i" || frase[i]=="o" || frase[i]=="u") {
+					contador++;
+				}
+				const element = frase[i];
+				
+			}
+			return contador;
+		}
+		
+	</script>
+</body>
+</html>

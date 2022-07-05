@@ -1,0 +1,37 @@
+table {
+  width: 100%;
+  text-align: center;
+}
+tbody tr {
+  border-top: 2px solid grey;
+}
+*/
+th {
+  padding: 20px;
+}
+table button {
+  width: 100%;
+}
+.modal-header div {
+  display: flex;
+  align-items: center;
+}
+.modal-image {
+  width: 15%;
+}
+#celda-imagen {
+  width: 150px;
+}
+#celda-altura, #celda-peso {
+  width: 100px;
+}
+#celda-id {
+  width: 50px;
+}
+#botones {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  border-radius: 5px;
+}

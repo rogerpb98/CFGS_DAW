@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mypets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RUTA_I_NOM_FITXER_XSD">
+  <pet>
+    <dog lang="none">
+      <name>Snoopy</name>
+      <born>1959-10-04</born>
+      <breed>Beagle</breed>
+    </dog>
+  </pet>
+  <pet>
+    <bear lang="en">
+      <name>Yogi</name>
+      <born>1958-09-29</born>
+      <breed>Grizzly</breed>
+    </bear>
+  </pet>
+  <pet>
+    <cat lang="none">
+      <name>Felix</name>
+      <born>1919-03-03</born>
+    </cat>
+  </pet>
+  <pet>  
+    <dog lang="en">
+      <name>Scooby-doo</name>
+      <born>1969-09-13</born>
+      <breed>Great Dane</breed>
+    </dog>
+  </pet>
+</mypets>

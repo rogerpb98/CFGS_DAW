@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text = prompt("Introduce un texto","Este texto es de pruebaaa");
+
+        // Primera opcion: 2 contadores
+        let count_a = 0, count_b = 0;
+        for (let i = 0; i < text.length; i++){
+            if (text.charAt(i) == "a"){
+                count_a ++;
+            }
+            if (text.charAt(i) == "b"){
+                count_b ++;
+            }
+        }
+        console.log(count_a+", "+count_b);
+        if (count_a == count_b){
+            alert("Hay el mismo numero de a que de b");
+        } else {
+            alert("Hay diferente numero de a que de b");
+        }
+
+    </script>
+</body>
+</html>

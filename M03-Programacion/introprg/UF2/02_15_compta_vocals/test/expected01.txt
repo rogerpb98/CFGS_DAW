@@ -1,0 +1,15 @@
+Introdueix un text
+Nombre de 'a's: 3
+Nombre de 'à's: 0
+Nombre de 'e's: 0
+Nombre de 'è's: 0
+Nombre de 'é's: 1
+Nombre de 'i's: 0
+Nombre de 'í's: 1
+Nombre de 'ï's: 0
+Nombre de 'o's: 1
+Nombre de 'ó's: 0
+Nombre de 'ò's: 0
+Nombre de 'u's: 2
+Nombre de 'ú's: 0
+Nombre de 'ü's: 0

@@ -1,0 +1,47 @@
+1.- Select ALL the links in the webpage that appears on the main page.
+Hint: on 15/03/21 there are 301 different links.
+//a
+
+2.- Find an xPath to select every link in the Novel Updates section  and the User Tools section.
+Hint: Try to select first only one section, and later the other section
+//div[@id="text-2" or @id="text-3"]/div/ul/li/a
+
+3.- Find an XPath that selects the link elements under the Latest Topics.
+Hint: You may use the words ‘Latest Topics’ in your xPath
+//table[@class="frmlatest"]/tbody/tr/td/a
+
+4.- Select only the arrow icon close to the login icon.
+Hint: check the @class attribute.
+//i[contains(@class,'fa-angle-down')]
+
+5.- Select only the last tree webpage elements. 
+Hint: check the attributes.
+//div[@class="w-copyright"]/a[last()]
+
+1.- Select all the section items from the main page.
+//nav[@class="category-nav"]/a/div[1]
+
+2.- Select the link element to change the webpage language. You cannot use the text inside the element.
+//div[@id="language-switcher"]/span/a
+
+3.- Find an xPath that selects the footer elements of the webpage
+//div[@class="indexFeatBigButtons"]/a/div
+
+4.- Find an xPath that selects all the images element in the February art Challenge section (44 images).
+//div[contains(@class,'artChallengeSelectionsItem')]/img
+
+1.- Find an xPath that selects from the Science and Technology menu, the four main sections elements.
+//div[@class="menuFeatured"]/*[position()<5]
+
+2.- Now find an xPath that selects all these six items:
+//div[@id="featuredFilterContainer"]/div/div/*
+
+3.- Now try to select only all the elements below the previous items:
+//div[@class="content"]/ul/li
+
+4.- Select the last element in the webpage, from the previous selection:
+//div[@class="content"]/ul/li[last()]
+
+5.- Select the elements with the NASA word inside.
+//div[@class="content"]/ul/li[contains(img/@alt,'NASA')]
+

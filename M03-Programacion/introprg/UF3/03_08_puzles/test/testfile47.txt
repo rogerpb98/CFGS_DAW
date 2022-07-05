@@ -1,0 +1,2 @@
+del UN_PUZLE a 6
+quit

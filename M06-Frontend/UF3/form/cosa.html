@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.onload = main;
+
+        function main () {
+            document.getElementById("enviar").addEventListener("click", validar);
+        }
+
+        function validar (e) {
+            if (!validarNombre || !validarTelefono) {
+                e.preventDefault();
+            }
+        }
+
+        function validarNombre () {
+            let nombreInput = document.getElementById("nombre");
+            if (nombreInput.input == "") {
+                alert("El campo nombre no puede estar vacío");
+                return false;
+            }
+            return true;
+        }
+        function validarTelefono () {
+            let telefonoInput = document.getElementById("telefono");
+            if (!telefonoInput.value || isNaN(telefonoInput.value)) {
+                alert("El campo telefono debe ser numérico");
+                return false;
+            }
+            return true;
+        }
+        function validarEmail () {
+            let telefonoInput = document.getElementById("telefono");
+            if (isNaN(telefonoInput.value)) {
+                alert("El campo telefono debe ser numérico");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="procesar-php" methos="post" id="formulario">
+
+    </form>
+</body>
+</html>

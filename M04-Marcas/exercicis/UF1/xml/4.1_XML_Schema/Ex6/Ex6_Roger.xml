@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RUTA_I_NOM_FITXER_XSD">
+    <alumne dni="54978846">
+        <nom>Toshiba</nom>
+        <adress>
+            <carrer>Antoni de Capmany</carrer>
+            <nom>Hola</nom>
+            <ciutat>Barcelona</ciutat>
+            <província>Barcelona</província>
+        </adress>
+        <tel>649781543</tel>
+    </alumne>
+    <alumne dni="19648735">
+        <nom>Toshiba</nom>
+        <adress>
+            <carrer>Sepúlveda</carrer>
+            <nom>Sipor</nom>
+            <ciutat>Barcelona</ciutat>
+            <província>Barcelona</província>
+        </adress>
+        <tel>635948761</tel>
+    </alumne>
+    <alumne dni="97846537">
+        <nom>Toshiba</nom>
+        <adress>
+            <carrer>Balmes</carrer>
+            <nom>Adeu</nom>
+            <ciutat>Barcelona</ciutat>
+            <província>Barcelona</província>
+        </adress>
+        <tel>934678194</tel>
+    </alumne>
+</alumnes>

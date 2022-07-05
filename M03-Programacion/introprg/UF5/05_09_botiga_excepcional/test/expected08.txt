@@ -1,0 +1,5 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+Referències llegides: 0
+botiga> ref> nom> tipus> preu max.> collita> estoc min.> D.O.> No trobat
+botiga> Referències guardades: 0
+adéu

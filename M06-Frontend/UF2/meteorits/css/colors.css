@@ -1,0 +1,29 @@
+:root {
+    --white-font: rgb(199, 194, 187);
+    --header-footer-bg: rgb(29, 31, 32);
+    --body-bg: rgb(62, 71, 84);
+    --card-bg: rgb(24, 26, 27);
+    --card-title: rgb(111, 180, 206);
+}
+body {
+    background-color: var(--body-bg);
+    color: var(--white-font);
+}
+header * {
+    color: var(--white-font);
+}
+header, footer {
+    background-color: var(--header-footer-bg);
+}
+main .top-banner {
+    color: white;
+}
+.card {
+    background-color: var(--card-bg);
+}
+footer a {
+    color: var(--white-font);
+}
+.card-title {
+    color: var(--card-title);
+}

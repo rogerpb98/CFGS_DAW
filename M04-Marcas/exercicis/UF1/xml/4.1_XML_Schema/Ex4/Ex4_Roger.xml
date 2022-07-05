@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mobileList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RUTA_I_NOM_FITXER_XSD">
+    <device>
+        <brand>Samsung</brand>
+        <model>Galaxy Flod 2</model>
+        <details>
+            <screen>8” &amp; 6,6”</screen>
+            <battery>4.500 mAh</battery>
+            <price>2009€</price>
+        </details>
+    </device>
+    <device>
+        <brand>Huawei</brand>
+        <model>Mate XS</model>
+        <details>
+            <price>2599€</price>
+            <screen>7,6” &amp; 6,2”</screen>
+            <battery>4.500 mAh</battery>
+        </details>
+    </device>
+    <device>
+        <brand>Motorola</brand>
+        <model>Razr2020</model>
+        <details>
+            <price>1499€</price>
+            <battery>2.800 mAh</battery>
+            <screen>6,2” &amp; 2,7”</screen>
+        </details>
+    </device>
+</mobileList>

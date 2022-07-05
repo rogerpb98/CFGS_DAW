@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>M6 UF2</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/colors.css">
+	<script src="js/functions.js"></script>
+
+	<!--Charts-->
+	<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+
+	<!--Map-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
+
+	<!--Icons-->
+	<script src="https://kit.fontawesome.com/0835baed9f.js" crossorigin="anonymous"></script>
+
+</head>
+<body onload="loadData()">
+	<header>
+		<a href="https://data.nasa.gov">
+			<img src="https://data.nasa.gov/api/assets/101AE2CD-4D6B-45E2-B2D6-30B36F639398" alt='NASA "meatball" logo'>
+			<span class="site-name">NASA's Open Data Portal</span>
+		</a>
+		<nav>
+			<div class="nav-links">
+				<a class="nav-link" href="https://data.nasa.gov/browse">Data Catalog</a>
+				<a class="nav-link" href="https://data.nasa.gov/stories/s/e3dt-gtde">About</a>
+				<a class="nav-link" href="https://data.nasa.gov/stories/s/gk8h-th3y">Developer Resources</a>
+			</div>
+			<div class="nav-rrss">
+				<div class="divider"><span></span></div>
+				<div class="nav-rrss-links">
+					<a class="rrss-link" href="https://www.facebook.com/NASA"><i class="fab fa-facebook"></i></a>
+					<a class="rrss-link" href="https://github.com/nasa/"><i class="fab fa-github"></i></a>
+					<a class="rrss-link" href="https://twitter.com/NASA"><i class="fab fa-twitter"></i></a>
+					<a class="rrss-link" href="https://www.youtube.com/user/NASAtelevision"><i class="fab fa-youtube"></i></a>
+					<a class="rrss-link" href="https://www.instagram.com/nasa"><i class="fab fa-instagram"></i></a>
+					<a class="rrss-link" href="https://nasa.tumblr.com"><i class="fab fa-tumblr"></i></a>
+				</div>
+				<div class="divider"><span></span></div>
+				<div class="search">
+					<i class="fas fa-search"></i>
+				</div>
+				<div class="divider"><span></span></div>
+				<div class="sign-in">
+					<a class="sign-in-btn" href="https://data.nasa.gov/login">Sign In</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="top-banner">
+			<p class="filters">Showing all meteorite landings</p>
+			<p><input type="checkbox" name="rescale" id="rescale">Rescale Axes on Filter</p>
+		</div>
+		<div class="cards">
+			<div class="scroller">
+				<div class="card">
+					<p>Number of meteorite landings by</p>
+					<p class="card-title">fall</p>
+					<div class="chart" id="fallchart"></div>
+				</div>
+				<div class="card">
+					<p>Number of meteorite landings by</p>
+					<p class="card-title">weight</p>
+					<div class="chart" id="weightchart"></div>
+				</div>
+			</div>
+			<div class="card">
+				<p class="card-title">GeoLocation</p>
+				<div id="map"></div>
+				<ul class="legend">
+					<li id="green"><=1000g</li>
+					<li id="orange">>1000g && <=100000g</li>
+					<li id="red">>100000g</li>
+				</ul>
+			</div>
+		</div>
+		<div id="table" class="card">
+			<p>Mostrant <span id="quantitat" class="card-title">X</span> resultats. Massa total <span id="mass" class="card-title">Y</span> (Kg). Massa mitjana per meteorit: <span id="mitjana" class="card-title">Z</span> (g)</p>
+			<div id="llistat"></div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer-logo">
+			<a href="https://data.nasa.gov">
+				<span class="site-name">NASA's Open Data Portal</span>
+			</a>
+		</div>
+		<div class="footer-links">
+			<ul class="footer-links-col">
+				<li>
+					<a class="footer-link" href="https://data.nasa.gov">Home Page</a>
+				</li>
+				<li>
+					<a class="footer-link" href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy</a>
+				</li>
+				<li>
+					<a class="footer-link" href="mailto:nasa-data@lists.arc.nasa.gov">Contact Us</a>
+				</li>
+				<li>
+					<a class="footer-link" href="mailto:nasa-data@lists.arc.nasa.gov">Site Feedback</a>
+				</li>
+				<li>
+					<a class="footer-link" href="mailto:benjamin.reist@nasa.gov">NASA Official: Benjamin Reist</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="js/chart.js"></script>
+	<script src="js/map.js"></script>
+</body>
+</html>

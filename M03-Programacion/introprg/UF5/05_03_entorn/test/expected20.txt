@@ -1,0 +1,13 @@
+Celler La Bona Estrella. Escriviu ajuda per veure opcions.
+botiga> nom (enter cancel·la)> preu (en cèntims)> estoc (enter sense estoc)> Introduït:
+	Vi: Roura blanc
+	Preu: 2200
+	Estoc: 0
+
+botiga> nom (enter cancel·la)> A eliminar:
+	Vi: Roura blanc
+	Preu: 2200
+	Estoc: 0
+
+Segur?> No eliminat
+botiga> adéu

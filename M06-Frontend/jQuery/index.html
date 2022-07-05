@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <script src="index.js"></script>
+    <style>
+        #container {
+            display: flex;
+        }
+        .col {
+            width: 50%;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        #chartdiv {
+          width: 100%;
+          height: 500px;
+        }
+    </style>
+        
+    <!-- Resources -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+</head>
+<body>
+    <select name="countries" id="countries">
+
+    </select>
+    <h1 id="title">COVID-19 Evolution: <span id="country"></span></h1>
+    <div id="container">
+        <div class="col">
+            <label for="from">From</label>
+            <input type="date" name="from" id="from">
+        </div>
+        <div class="col">
+            <label for="from">To</label>
+            <input type="date" name="to" id="to">
+        </div>
+    </div>
+    <div id="chartdiv"></div>
+</body>
+</html>

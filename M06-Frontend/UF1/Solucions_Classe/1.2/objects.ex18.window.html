@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Metodes de l'objecte finestra</h1>
+    <button onclick="newWindow()">New window</button>
+    <button onclick="closeWindow()">Close window</button>
+    <button onclick="resizeWindow()">Resize window</button>
+    <button onclick="moveWindow()">Move window</button>
+    <button onclick="focusWindow()">Focus window</button>
+    <button onclick="printWindow()">Print window</button>
+
+    <script>
+        function newWindow() {
+            myWindow = window.open("", "", "width=300,height=500");
+            myWindow.document.write("<h1>Finestra nova</h1>");
+        }
+
+        function closeWindow() {
+            myWindow.close();
+        }
+
+        function resizeWindow() {
+            myWindow.resizeBy(20, 15);
+        }
+
+        function moveWindow() {
+            myWindow.moveBy(15, 20);
+        }
+        function focusWindow() {
+            myWindow.focus();
+        }
+
+        function printWindow() {
+            myWindow.print();
+        }
+
+        let myWindow;
+
+    </script>
+</body>
+</html>
